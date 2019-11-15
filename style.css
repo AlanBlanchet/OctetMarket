@@ -52,6 +52,11 @@ nav {
 	height: 65px;
 	display:flex;
 }
+.submenu > div{
+	padding: 7px;
+	margin:5px 5px;
+	border-bottom:2px solid white;
+}
 
 .s{
 	margin: 20px;
@@ -127,4 +132,12 @@ strong {
 	width: 150px;
 	margin: 5px;
 	float: right;
+}
+.main-slider > img{
+	height:200px;
+	width:200px;
+}
+
+.slider-image-1{
+	background-image: url(https://img.lemde.fr/2019/04/22/0/191/1619/1079/688/0/60/0/e39da8d_2FIads9h8wB-0SwSgxVaVWsp.jpg);
 }
