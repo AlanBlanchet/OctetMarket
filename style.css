@@ -105,3 +105,8 @@ nav {
 	justify-content: center;
 	font-size: 60px;
 }
+
+
+.image {
+	border-style: dashed solid;
+}
