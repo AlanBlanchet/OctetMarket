@@ -86,7 +86,9 @@ nav {
 }
 
 .submenu > div{
-	margin:12px 5px;
+	padding: 7px;
+	margin:5px 5px;
+	border-bottom:2px solid white;
 }
 
 .s{
