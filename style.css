@@ -1,6 +1,6 @@
 :root{
 	--main-color:#2980b9;
-	--secondary-color:#0c26ed;
+	--secondary-color: #34495e;
 }
 
 body {
@@ -15,10 +15,22 @@ a{
 	color:white;
 }
 
+body>div{
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--secondary-color);
+	color: white;
+	height: 40px;
+	font-size: 27px;
+	padding-top: 10px;
+}
+
 nav {
 	font-family: "Montserrat", sans-serif;
 	background-color: #34495e;
-	height: 65px;
+	height: 50px;
 	display:flex;
 	position: relative;
 }
@@ -63,10 +75,6 @@ nav {
 .menu-bar > div:hover{
 	background-color:var(--main-color);
 	border-radius: 40px;
-}
-
-.menu-bar > :nth-child(2):hover, .menu-bar > :nth-child(3):hover{
-	border-bottom-left-radius: 0px;
 }
 
 .menu-bar > div:hover > .submenu{
