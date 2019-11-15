@@ -1,28 +1,3 @@
-:root{
-	--main-color:#2980b9;
-	--secondary-color:#0c26ed;
-}
-
-body {
-	background-color: #3498db;
-	padding: 0;
-	margin: 0;
-}
-
-a{
-	outline-style: none;
-	text-decoration: none;
-	color:white;
-}
-
-nav {
-	font-family: "Montserrat", sans-serif;
-	background-color: #34495e;
-	height: 65px;
-	display:flex;
-	position: relative;
-}
-
 .milieu{
 	position: relative;
 	display: flex;
@@ -35,7 +10,7 @@ nav {
 	padding: 10px;
 }
 
-.menu-bar{
+.menu{
 	position: relative;
 	display: inline-flex;
 	flex-direction: row;
@@ -43,48 +18,40 @@ nav {
 	justify-content: center;
 }
 
-.menu-bar > div{
-	position: relative;
-	padding: 7px;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin: 7px 5px;
-	width: 140px;
+.menu a {
+	text-decoration: none;
 	color: white;
 	text-align: center;
+	align-items: center;
+	width: 120px;
+	padding: 7px;
+	margin: 10px;
+	border: 10px;
 	transition: 0.2s linear;
-	cursor: pointer;
 }
 
-.menu-bar > :nth-child(2):hover , .menu-bar > :nth-child(3):hover{
-	border-bottom-left-radius: 0px;
-}
-
-.menu-bar > div:hover{
-	background-color:var(--main-color);
+.menu>a:hover{
+	background-color: #2980b9;
 	border-radius: 40px;
+	padding: 7px;
 }
 
-.menu-bar > :nth-child(2):hover, .menu-bar > :nth-child(3):hover{
-	border-bottom-left-radius: 0px;
+body {
+	background-color: #3498db;
+	padding: 0;
+	margin: 0;
 }
 
-.menu-bar > div:hover > .submenu{
-	display: flex;
-	flex-direction: column;
+a{
+	outline-style: none; 
 }
 
-.submenu{
-	position: absolute;
-	width:136px;
-	display: none;
-	top:32px;
-	left:0px;
-	/*border-right:4px solid var(--secondary-color);*/
-	background-color:var(--main-color);
-	transition: 0.2s linear;
+nav {
+	font-family: "Montserrat", sans-serif;
+	background-color: #34495e;
+	height: 65px;
+	display:flex;
 }
-
 .submenu > div{
 	padding: 7px;
 	margin:5px 5px;
@@ -114,8 +81,8 @@ nav {
 .but {
 	text-align: center;
 	display: inline-block;
-	width: 45px;
-	height: 45px;
+	width: 50px;
+	height: 50px;
 	background-color: #f1f1f1;
 	margin: 5px;
 	border-radius: 100%;
@@ -124,8 +91,8 @@ nav {
 }
 
 .but i {
-	line-height: 45px;
-	font-size: 22px;
+	line-height: 50px;
+	font-size: 24px;
 	transition: 0.2s linear;
 }
 
@@ -133,19 +100,39 @@ nav {
 	transform: scale(1.2);
 }
 
-.main-slider{
-	margin:auto;
-	display: block;
-	width:80%;
-	height:800px;
-	background-color: rgba(10,10,10,0.3);
-	border-left:4px solid white;
-	border-right:4px solid white;
-	border-radius:5px;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
+.welcome {
+	font-family: "Impact",fantasy;
+	background-color: white;
+	text-align: center;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 60px;
 }
 
+.bordure2 {
+    width: 700px;
+    text-align: left;
+    border: 1px solid #11509F;
+    margin: left;
+    background: ivory;
+}
+.bordure {
+    width: 750px;
+    text-align: center;
+    border: 1px solid ivory;
+    margin: auto;
+    list-style-type: none;
+}
+strong {
+  font-weight:normal;
+}
+.droite {
+	width: 150px;
+	margin: 5px;
+	float: right;
+}
 .main-slider > img{
 	height:200px;
 	width:200px;
