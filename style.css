@@ -1,3 +1,28 @@
+:root{
+	--main-color:#2980b9;
+	--secondary-color:#0c26ed;
+}
+
+body {
+	background-color: #3498db;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	outline-style: none;
+	text-decoration: none;
+	color:white;
+}
+
+nav {
+	font-family: "Montserrat", sans-serif;
+	background-color: #34495e;
+	height: 65px;
+	display:flex;
+	position: relative;
+}
+
 .milieu{
 	position: relative;
 	display: flex;
@@ -10,7 +35,7 @@
 	padding: 10px;
 }
 
-.menu{
+.menu-bar{
 	position: relative;
 	display: inline-flex;
 	flex-direction: row;
@@ -18,55 +43,42 @@
 	justify-content: center;
 }
 
-.menu a {
-	text-decoration: none;
+.menu-bar > div{
+	position: relative;
+	padding: 7px;
+	margin: 10px 20px;
+	width: 140px;
 	color: white;
 	text-align: center;
-	align-items: center;
-	width: 120px;
-	padding: 7px;
-	margin: 10px;
-	border: 10px;
 	transition: 0.2s linear;
+	cursor: pointer;
 }
 
-.menu>a:hover{
-	background-color: #2980b9;
+.menu-bar > div:hover{
+	background-color:var(--main-color);
 	border-radius: 40px;
-	padding: 7px;
+	border-bottom-left-radius: 0px;
 }
 
-body {
-	background-color: #3498db;
-	padding: 0;
-	margin: 0;
-}
-
-a{
-	outline-style: none; 
-}
-
-nav {
-	font-family: "Montserrat", sans-serif;
-	background-color: #34495e;
-	height: 65px;
-	display:flex;
-	position: relative;
-}
-
-.menu>ul{
-	list-style: none;
+.menu-bar > div:hover > .submenu{
+	display: flex;
+	flex-direction: column;
 }
 
 .submenu{
-	display: none;
 	position: absolute;
-	background-color: white;
+	width:136px;
+	display: none;
+	top:33px;
+	left:0px;
+	border-right:4px solid var(--secondary-color);
+	background-color:var(--main-color);
+	transition: 0.2s linear;
 }
 
-nav>div:hover>.submenu {
-	display: flex;
-	flex-direction: row;
+.submenu > div{
+	margin:5px;
+	border-bottom:2px solid white;
 }
 
 .s{
@@ -120,9 +132,4 @@ nav>div:hover>.submenu {
 	align-items: center;
 	justify-content: center;
 	font-size: 60px;
-}
-
-
-.image {
-	border-style: dashed solid;
 }
