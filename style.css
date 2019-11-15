@@ -51,6 +51,22 @@ nav {
 	background-color: #34495e;
 	height: 65px;
 	display:flex;
+	position: relative;
+}
+
+.menu>ul{
+	list-style: none;
+}
+
+.submenu{
+	display: none;
+	position: absolute;
+	background-color: white;
+}
+
+nav>div>a:hover .submenu {
+	display: flex;
+	flex-direction: column;
 }
 
 .s{
@@ -76,8 +92,8 @@ nav {
 .but {
 	text-align: center;
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 	background-color: #f1f1f1;
 	margin: 5px;
 	border-radius: 100%;
@@ -86,8 +102,8 @@ nav {
 }
 
 .but i {
-	line-height: 50px;
-	font-size: 24px;
+	line-height: 45px;
+	font-size: 22px;
 	transition: 0.2s linear;
 }
 
