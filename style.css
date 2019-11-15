@@ -65,6 +65,10 @@ nav {
 	border-radius: 40px;
 }
 
+.menu-bar > :nth-child(2):hover, .menu-bar > :nth-child(3):hover{
+	border-bottom-left-radius: 0px;
+}
+
 .menu-bar > div:hover > .submenu{
 	display: flex;
 	flex-direction: column;
@@ -129,13 +133,20 @@ nav {
 	transform: scale(1.2);
 }
 
-.welcome {
-	font-family: "Impact",fantasy;
-	background-color: white;
-	text-align: center;
-	height: 300px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 60px;
+.main-slider{
+	margin:auto;
+	display: block;
+	width:80%;
+	height:800px;
+	background-color: rgba(10,10,10,0.3);
+	border-left:4px solid white;
+	border-right:4px solid white;
+	border-radius:5px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.main-slider > img{
+	height:200px;
+	width:200px;
 }
