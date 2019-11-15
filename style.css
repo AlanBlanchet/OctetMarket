@@ -54,19 +54,15 @@ nav {
 	position: relative;
 }
 
-.menu>ul{
-	list-style: none;
-}
-
 .submenu{
 	display: none;
-	position: absolute;
-	background-color: white;
+	background-color: black;
 }
 
-nav>div:hover>.submenu {
+nav>div>a:hover>.submenu {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	align-items: stretch;
 }
 
 .s{
