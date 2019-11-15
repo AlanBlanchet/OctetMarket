@@ -46,12 +46,18 @@ nav {
 .menu-bar > div{
 	position: relative;
 	padding: 7px;
-	margin: 10px 20px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: 7px 5px;
 	width: 140px;
 	color: white;
 	text-align: center;
 	transition: 0.2s linear;
 	cursor: pointer;
+}
+
+.menu-bar > :nth-child(2):hover , .menu-bar > :nth-child(3):hover{
+	border-bottom-left-radius: 0px;
 }
 
 .menu-bar > div:hover{
@@ -72,9 +78,9 @@ nav {
 	position: absolute;
 	width:136px;
 	display: none;
-	top:33px;
+	top:32px;
 	left:0px;
-	border-right:4px solid var(--secondary-color);
+	/*border-right:4px solid var(--secondary-color);*/
 	background-color:var(--main-color);
 	transition: 0.2s linear;
 }
