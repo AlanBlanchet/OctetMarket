@@ -146,34 +146,6 @@ nav {
 	border-top-right-radius: 0px;
 }
 
-<<<<<<< HEAD
-.bordure2 {
-    width: 700px;
-    text-align: left;
-    border: 1px solid #11509F;
-    margin: left;
-    background: ivory;
-}
-
-.bordure {
-    width: 750px;
-    text-align: center;
-    border: 1px solid ivory;
-    margin: auto;
-    list-style-type: none;
-}
-strong {
-  font-weight:normal;
-}
-
-.droite {
-	width: 150px;
-	margin: 5px;
-	float: right;
-}
-
-=======
->>>>>>> parent of 7eee27e... Merge branch 'master' of https://github.com/XxAlanoxxX/Octet-Market
 .main-slider > img{
 	height:200px;
 	width:200px;
