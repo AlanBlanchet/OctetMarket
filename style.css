@@ -64,9 +64,10 @@ nav {
 	background-color: white;
 }
 
-nav>div:hover>.submenu {
+nav>div.sub:hover>.submenu {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	color: black;
 }
 
 .s{
@@ -122,7 +123,8 @@ nav>div:hover>.submenu {
 	font-size: 60px;
 }
 
-
-.image {
+div.produit {
+	background-color: #34495e;
 	border-style: dashed solid;
+	width: 230px;
 }
