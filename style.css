@@ -9,12 +9,6 @@ body {
 	margin: 0;
 }
 
-a{
-	outline-style: none;
-	text-decoration: none;
-	color:white;
-}
-
 body>div{
 	font-family: "Montserrat", sans-serif;
 	display: flex;
@@ -27,12 +21,32 @@ body>div{
 	padding-top: 10px;
 }
 
+a{
+	outline-style: none;
+	text-decoration: none;
+	color:white;
+}
+
 nav {
+	z-index: 2;
 	font-family: "Montserrat", sans-serif;
 	background-color: #34495e;
 	height: 50px;
 	display:flex;
 	position: relative;
+}
+
+main > div{
+	width:100%;
+	display: flex;
+}
+
+main > div:first-child{
+	flex-grow: 1;
+}
+
+main > div:last-child{
+	flex-grow: 1;
 }
 
 .milieu{
@@ -142,24 +156,66 @@ nav {
 }
 
 .main-slider{
-	margin:auto;
-	display: block;
-	width:80%;
 	height:800px;
+	flex-grow:1;
 	background-color: rgba(10,10,10,0.3);
 	border-left:4px solid white;
 	border-right:4px solid white;
 	border-radius:5px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
+	overflow: hidden;
 }
 
-.main-slider > img{
-	height:200px;
-	width:200px;
+.slides{
+	z-index: 1;
+	width:400%;
+	height:100%;
 }
 
-.slider-image-1{
-	background-image: url(https://img.lemde.fr/2019/04/22/0/191/1619/1079/688/0/60/0/e39da8d_2FIads9h8wB-0SwSgxVaVWsp.jpg);
+.slider{
+	float:left;
+	width:calc(100%/4);
+	height:100%;
+	transform: translateX(0px);
+	animation: 15s infinite ease slider-anim;
+}
 
+.slides+div{
+	animation:none;
+}
+
+.slider > img{
+	width:100%;
+	height:100%;
+}
+
+@keyframes slider-anim{
+	0%{
+		transform:translateX(0%);
+	}
+	10%{
+		transform: translateX(0%);
+	}
+	20%{
+		transform:translateX(-100%);
+	}
+	30%{
+		transform:translateX(-100%);
+	}
+	40%{
+		transform:translateX(-200%);
+	}
+	50%{
+		transform:translateX(-200%);
+	}
+	60%{
+		transform:translateX(-300%);
+	}
+	70%{
+		transform:translateX(-300%);
+	}
+	80%{
+		transform: translateX(0%);
+	}
 }
