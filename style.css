@@ -16,10 +16,12 @@ body {
 	height:3000px;
 }
 
-body>div:first-child{
-	position: relative;
+#header-1{
+	position: fixed;
 	display: flex;
 	padding: 5px 0px;
+	left:0px;
+	right:0px;
 	color:var(--text-default);
 	font-size: 40px;
 	background-color: var(--fourth-color);
@@ -34,16 +36,16 @@ body>div:first-child{
 	cursor: default;
 }
 
-body>div>a{
+#header-1>a{
 	color: var(--third-color);
 }
 
-body>div::before{
+#header-1::before{
 	content:"10010101 10111101 10010001 01011101 10110101 |";
 	margin-right: 20px;
 }
 
-body>div::after{
+#header-1::after{
 	content:"| 01101101 11011010 11101010 10110110 10011010";
 	margin-left: 20px;
 }
