@@ -87,7 +87,7 @@ main > div > div:first-child,main > div > div:last-child{
 	padding: 10px;
 }
 
-.menu{
+.menu-bar{
 	position: relative;
 	display: inline-flex;
 	flex-direction: row;
@@ -104,16 +104,7 @@ main > div > div:first-child,main > div > div:last-child{
 	width: 140px;
 	font-size:16px;
 	color: var(--text-default);
-}
-.menu a {
-	text-decoration: none;
-	color: white;
 	text-align: center;
-	align-items: center;
-	width: 120px;
-	padding: 7px;
-	margin: 10px;
-	border: 10px;
 	transition: 0.2s linear;
 	cursor: pointer;
 }
@@ -123,8 +114,8 @@ main > div > div:first-child,main > div > div:last-child{
 	border-bottom-right-radius: 0px;
 }
 
-.menu>a:hover{
-	background-color: #2980b9;
+.menu-bar > div:hover{
+	background-color:var(--main-color);
 	border-radius: 40px;
 	color:var(--text-select);
 	font-size:17px;
@@ -148,26 +139,6 @@ main > div > div:first-child,main > div > div:last-child{
 }
 
 .sub-menu > div{
-	padding: 7px;
-}
-
-body {
-	background-color: #3498db;
-	padding: 0;
-	margin: 0;
-}
-
-a{
-	outline-style: none; 
-}
-
-nav {
-	font-family: "Montserrat", sans-serif;
-	background-color: #34495e;
-	height: 65px;
-	display:flex;
-}
-.submenu > div{
 	padding: 7px;
 	margin:5px 5px;
 	border-bottom:2px solid var(--border-default);
@@ -207,8 +178,6 @@ nav {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	width: 50px;
-	height: 50px;
 	background-color: #f1f1f1;
 	margin: 5px;
 	margin-bottom: 10px;
@@ -220,8 +189,6 @@ nav {
 .but i {
 	line-height: 40px;
 	font-size: 22px;
-	line-height: 50px;
-	font-size: 24px;
 	transition: 0.2s linear;
 }
 
@@ -240,30 +207,6 @@ nav {
 
 .main-slider:hover{
 	border:10px solid rgba(10,10,10,0.1);
-}
-.welcome {
-	font-family: "Impact",fantasy;
-	background-color: white;
-	text-align: center;
-	height: 300px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 60px;
-}
-.section-commentaire {
-    width: 750px;
-    text-align: center;
-    border: 1px solid ivory;
-    margin: auto;
-    list-style-type: none;
-}
-.commentaire {
-    width: 700px;
-    text-align: left;
-    border: 1px solid #11509F;
-    margin: left;
-    background: ivory;
 }
 
 .slides{
