@@ -1,53 +1,76 @@
 :root{
 	--main-color:#2980b9;
 	--secondary-color: #34495e;
+	--third-color:#70a1ff;
+	--fourth-color:#002e6e;
+	--border-default:white;
+	--text-default:white;
+	--text-select:red;
+	--overlay-dark:rgba(50,100,150,0.95);
 }
 
 body {
 	background-color: #3498db;
 	padding: 0;
 	margin: 0;
+	height:3000px;
 }
 
-body>div{
-	font-family: "Montserrat", sans-serif;
+body>div:first-child{
+	position: relative;
 	display: flex;
+	padding: 5px 0px;
+	color:var(--text-default);
+	font-size: 40px;
+	background-color: var(--fourth-color);
+	z-index: 5;
+	font-family: "Montserrat", sans-serif;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--secondary-color);
-	color: #70a1ff;
 	height: 40px;
-	font-size: 27px;
-	padding-top: 10px;
+	border-bottom: 1px solid var(--border-default);
+	text-shadow: 2px 2px 2px black;
+	white-space: nowrap;
 	cursor: default;
+}
+
+body>div>a{
+	color: var(--third-color);
+}
+
+body>div::before{
+	content:"10010101 10111101 10010001 01011101 10110101 |";
+	margin-right: 20px;
+}
+
+body>div::after{
+	content:"| 01101101 11011010 11101010 10110110 10011010";
+	margin-left: 20px;
 }
 
 a{
 	outline-style: none;
 	text-decoration: none;
-	color:white;
+	color:var(--text-default);
 }
 
 nav {
 	z-index: 2;
 	font-family: "Montserrat", sans-serif;
-	background-color: #34495e;
+	background-color: var(--overlay-dark);
 	height: 50px;
 	display:flex;
-	position: relative;
+	position: sticky;
+	top:51px;
+	border-bottom: 1px solid white;
 }
 
 main > div{
-	width:100%;
 	display: flex;
 }
 
-main > div:first-child{
-	flex-grow: 1;
-}
-
-main > div:last-child{
-	flex-grow: 1;
+main > div > div:first-child,main > div > div:last-child{
+	flex-grow: 1.5;
 }
 
 .milieu{
@@ -77,41 +100,55 @@ main > div:last-child{
 	padding-left: 5px;
 	margin: 7px 5px;
 	width: 140px;
-	color: white;
+	font-size:16px;
+	color: var(--text-default);
 	text-align: center;
 	transition: 0.2s linear;
 	cursor: pointer;
 }
 
-.menu-bar > :nth-child(2):hover , .menu-bar > :nth-child(3):hover{
+.menu-bar > div:nth-child(2):hover ,.menu-bar > div:nth-child(3):hover{
 	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 }
 
 .menu-bar > div:hover{
 	background-color:var(--main-color);
 	border-radius: 40px;
+	color:var(--text-select);
+	font-size:17px;
 }
 
-.menu-bar > div:hover > .submenu{
+.menu-bar > div:hover > .sub-menu{
 	display: flex;
 	flex-direction: column;
 }
 
-.submenu{
+.sub-menu{
 	position: absolute;
-	width:136px;
+	width:150px;
 	display: none;
 	top:32px;
 	left:0px;
-	/*border-right:4px solid var(--secondary-color);*/
+	font-size:16px;
 	background-color:var(--main-color);
-	transition: 0.2s linear;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
 }
 
-.submenu > div{
+.sub-menu > div{
 	padding: 7px;
 	margin:5px 5px;
-	border-bottom:2px solid white;
+	border-bottom:2px solid var(--border-default);
+}
+
+.sub-menu > div:last-child{
+	border-bottom:none;
+}
+
+.sub-menu > div:hover > a{
+	font-size:17px;
+	color:var(--text-select);
 }
 
 .s{
@@ -130,7 +167,7 @@ main > div:last-child{
 	text-align: center;
 	line-height: 30px;
 	vertical-align: middle;
-	color: #2980b9;
+	color: var(--main-color);
 	margin-right:20px; 
 }
 
@@ -144,7 +181,7 @@ main > div:last-child{
 	margin-bottom: 10px;
 	border-radius: 100%;
 	box-shadow: 0 5px 15px -5px #00000070;
-	color: #2980b9;
+	color:var(--main-color);
 }
 
 .but i {
@@ -158,15 +195,16 @@ main > div:last-child{
 }
 
 .main-slider{
-	height:800px;
-	flex-grow:1;
+	position: relative;
+	flex:3;
 	background-color: rgba(10,10,10,0.3);
-	border-left:4px solid white;
-	border-right:4px solid white;
-	border-radius:5px;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
+	margin:20px;
+	border:10px solid rgba(10,10,10,0.5);
 	overflow: hidden;
+}
+
+.main-slider:hover{
+	border:10px solid rgba(10,10,10,0.1);
 }
 
 .slides{
@@ -180,7 +218,7 @@ main > div:last-child{
 	width:calc(100%/4);
 	height:100%;
 	transform: translateX(0px);
-	animation: 15s infinite ease slider-anim;
+	animation: 12s infinite ease slider-anim;
 }
 
 .slides+div{
@@ -196,28 +234,28 @@ main > div:last-child{
 	0%{
 		transform:translateX(0%);
 	}
-	10%{
+	12%{
 		transform: translateX(0%);
 	}
-	20%{
+	24%{
 		transform:translateX(-100%);
 	}
-	30%{
+	36%{
 		transform:translateX(-100%);
 	}
-	40%{
-		transform:translateX(-200%);
-	}
-	50%{
+	48%{
 		transform:translateX(-200%);
 	}
 	60%{
+		transform:translateX(-200%);
+	}
+	72%{
 		transform:translateX(-300%);
 	}
-	70%{
+	84%{
 		transform:translateX(-300%);
 	}
-	80%{
+	96%{
 		transform: translateX(0%);
 	}
 }
