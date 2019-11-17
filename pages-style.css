@@ -50,7 +50,7 @@ main + div > div:first-child,main + div > div:last-child{
 	width:calc(100%/4);
 	height:100%;
 	transform: translateX(0px);
-	animation: 12s infinite ease slider-anim;
+	animation: 20s infinite ease slider-anim;
 }
 
 .slides+div{
