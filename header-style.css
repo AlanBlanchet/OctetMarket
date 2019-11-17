@@ -159,7 +159,7 @@ nav {
 
 .s{
 	display:inline-block;
-	padding:7px;
+	padding:7.5px;
 	padding-left:20px;
 	margin:10px;
 	margin-left:-13px;
@@ -176,7 +176,6 @@ nav {
 	height: 30px;
 	width: 30px;
 	border-radius: 100%;
-	border-right: 4px solid var(--main-color);
 	text-align: center;
 	line-height: 30px;
 	vertical-align: middle;
