@@ -136,3 +136,58 @@ main + div > div:first-child,main + div > div:last-child{
 		transform: translateX(0%);
 	}
 }
+
+@media(max-width:1150px)
+{
+	.container{
+		height:300px;
+	}
+
+	.container-produit{
+		margin:20px 60px;
+		margin-top:50px;
+	}
+}
+
+@media(max-width:930px)
+{
+	.container{
+		height:300px;
+	}
+}
+
+@media(max-width:800px)
+{
+	.container{
+		height:200px;
+	}
+}
+
+@media(max-width:700px)
+{
+	.container{
+		flex-direction: column;
+		height:calc(450px*3);
+	}
+
+	.container-produit{
+		margin:20px 140px;
+		margin-top:50px;
+	}
+}
+
+@media(max-width:650px)
+{
+	.container-produit{
+		margin:20px 100px;
+		margin-top:50px;
+	}
+}
+
+@media(max-width:450px)
+{
+	.container-produit{
+		margin:20px;
+		margin-top:50px;
+	}
+}
