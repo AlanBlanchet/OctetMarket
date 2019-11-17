@@ -51,6 +51,10 @@ nav {
 	color: var(--third-color);
 }
 
+#header-1>a:hover{
+	color:white;
+}
+
 #header-1::before{
 	content:"11010011 10010101 10111101 10010001 01011101 10110101 |";
 	margin-right: 20px;
