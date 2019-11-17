@@ -170,10 +170,11 @@ nav {
 	border-bottom-right-radius: 10px;
 	outline-style: none;
 	background-color: var(--main-color);
+	color:white;
 }
 
 .s::placeholder{
-	color:white;
+	color:rgba(255,255,255,0.6);;
 }
 
 .recherche {
