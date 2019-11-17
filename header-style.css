@@ -169,7 +169,7 @@ nav {
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	outline-style: none;
-	background-color: var(--fourth-color);
+	background-color: var(--main-color);
 }
 
 .s::placeholder{
@@ -178,16 +178,15 @@ nav {
 
 .recherche {
 	position: relative;
-	background-color: white;
 	height: 30px;
 	width: 30px;
 	border-radius: 100%;
 	text-align: center;
 	line-height: 30px;
 	vertical-align: middle;
-	color: var(--main-color);
+	color: white;
 	cursor:default;
-	background-color: var(--fourth-color);
+	background-color: var(--main-color);
 }
 
 .recherche > i{
