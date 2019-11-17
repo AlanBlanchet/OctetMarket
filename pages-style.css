@@ -7,10 +7,11 @@
 	--text-default:white;
 	--text-select:#bdc3c7;
 	--overlay-dark:rgba(50,100,150,0.95);
+	--background-color:rgb(30,30,30);
 }
 
 body {
-	background-color: #3498db;
+	background-color: var(--background-color);
 	padding: 0;
 	margin: 0;
     height:3000px;
@@ -36,13 +37,8 @@ main > div > div:first-child,main > div > div:last-child{
 	position: relative;
 	flex:3;
 	background-color: rgba(10,10,10,0.3);
-	margin:20px;
-	border:10px solid rgba(10,10,10,0.5);
+	height:calc(100vh - 100px);
 	overflow: hidden;
-}
-
-.main-slider:hover{
-	border:10px solid rgba(10,10,10,0.1);
 }
 
 .slides{
