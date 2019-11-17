@@ -103,13 +103,25 @@ main > div > div:first-child,main > div > div:last-child{
 }
 
 form {
-	display: block;
 	margin: auto;
 	color: white;
+	text-align: center;
 }
 
-form>input, form>select {
+form>input, form>select, form>textarea {
 	width: 250px;
+	display:inline-block;
+	text-align:left;
+	vertical-align:middle;
+	width: 40%;
+}
+
+form>label { 
+	 display:inline-block;
+	text-align:right;
+	vertical-align: top;
+	width: 40%;
+	padding-right: 5px;	
 }
 
 input:invalid+span.validity:after {
