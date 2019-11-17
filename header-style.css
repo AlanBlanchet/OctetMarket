@@ -165,9 +165,15 @@ nav {
 	margin-left:-13px;
 	width: 200px;
 	border:none;
+	border-right:6px solid white;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	outline-style: none;
+	background-color: var(--fourth-color);
+}
+
+.s::placeholder{
+	color:white;
 }
 
 .recherche {
@@ -181,6 +187,7 @@ nav {
 	vertical-align: middle;
 	color: var(--main-color);
 	cursor:default;
+	background-color: var(--fourth-color);
 }
 
 .recherche > i{
