@@ -13,7 +13,6 @@ body {
 	background-color: rgb(30,30,30);
 	padding: 0;
 	margin: 0;
-    height:3000px;
 	overflow-x: hidden;
 	color:white;
 }
@@ -117,7 +116,7 @@ form>input, form>select, form>textarea {
 }
 
 form>label { 
-	 display:inline-block;
+	display:inline-block;
 	text-align:right;
 	vertical-align: top;
 	width: 40%;
