@@ -6,14 +6,25 @@
 	--border-default:white;
 	--text-default:white;
 	--text-select:#bdc3c7;
-	--overlay-dark:rgba(50,100,150,0.95);
+	--overlay-dark:rgba(30,80,130,0.9);
 }
 
-body {
-	padding: 0;
-	margin: 0;
-	overflow:hidden;
-	height:100px;
+a{
+	outline-style: none;
+	text-decoration: none;
+	color:var(--text-default);
+}
+
+nav {
+	z-index: 15;
+	font-family: "Montserrat", sans-serif;
+	background-color: var(--overlay-dark);
+	height: 50px;
+	display:flex;
+	position: sticky;
+	top:51px;
+	border-bottom: 1px solid white;
+	overflow-y: visible;
 }
 
 #header-1{
@@ -50,31 +61,6 @@ body {
 	margin-left: 20px;
 }
 
-a{
-	outline-style: none;
-	text-decoration: none;
-	color:var(--text-default);
-}
-
-nav {
-	z-index: 2;
-	font-family: "Montserrat", sans-serif;
-	background-color: var(--overlay-dark);
-	height: 50px;
-	display:flex;
-	position: sticky;
-	top:51px;
-	border-bottom: 1px solid white;
-}
-
-main > div{
-	display: flex;
-}
-
-main > div > div:first-child,main > div > div:last-child{
-	flex-grow: 1.5;
-}
-
 .milieu{
 	position: relative;
 	display: flex;
@@ -93,6 +79,8 @@ main > div > div:first-child,main > div > div:last-child{
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	z-index: 50;
+	pointer-events: all;
 }
 
 .menu-bar > div{
@@ -140,6 +128,7 @@ main > div > div:first-child,main > div > div:last-child{
 	background-color:var(--main-color);
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;
+	z-index: 80;
 }
 
 .sub-menu > div{
