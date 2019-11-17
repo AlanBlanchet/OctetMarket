@@ -27,7 +27,7 @@ htmlCode += '<div><a href="equipe.html">Équipe</a></div>';
 htmlCode += '<div><a href="presse.html">Presse</a></div>';
 htmlCode += '</div>';
 htmlCode += '<div class="milieu">';
-htmlCode += '<a href="https://theuselessweb.com/" target="_blank" class="recherche">';
+htmlCode += '<a class="recherche">';
 htmlCode += '<i class="fas fa-search"></i>';
 htmlCode += '</a>';
 htmlCode += '<input type="search" name="q" class="s" placeholder="Rechercher">';

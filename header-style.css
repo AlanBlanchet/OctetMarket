@@ -158,24 +158,30 @@ nav {
 }
 
 .s{
-	margin: 20px;
-	width: 25%;
-	display:none;
+	display:inline-block;
+	padding:7px;
+	padding-left:20px;
+	margin:10px;
+	margin-left:-13px;
+	width: 200px;
+	border:none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	outline-style: none;
 }
 
 .recherche {
-	display: inline-block;
 	position: relative;
 	background-color: white;
 	height: 30px;
 	width: 30px;
 	border-radius: 100%;
-	box-shadow: 0 5px 15px -5px #00000070;
+	border-right: 4px solid var(--main-color);
 	text-align: center;
 	line-height: 30px;
 	vertical-align: middle;
 	color: var(--main-color);
-	margin-right:20px; 
+	cursor:default;
 }
 
 .recherche > i{
