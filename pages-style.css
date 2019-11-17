@@ -42,14 +42,14 @@ form {
 	border:4px solid var(--main-color);
 	border-radius: 4px;
 	background-color:rgba(0,0,0,0.5);
+	font-family: Arial;
 }
 
 form > div {
 	display: flex;
 	margin: 30px;
 	font-size: 20px;
-	font-family: Arial;
-}
+}	
 
 form > div > *{
 	margin:10px;
@@ -58,6 +58,13 @@ form > div > *{
 form > div > div, form > div > select, form > div > textarea{
 	width:50%;
 	text-align:left;
+	border-radius: 10px;
+}
+
+form input, form select {
+	padding: 8px;
+	outline-style: none;
+	border-radius: 10px;
 }
 
 form > div > label{
@@ -65,13 +72,13 @@ form > div > label{
 	text-align:right;
 }
 
-input:invalid+span.validity:after {
+form input:invalid+span.validity:after {
 	content: '✖';
 	padding-left: 5px;
 	color: red;
   }
   
-input:valid+span.validity:after {
+form input:valid+span.validity:after {
 	content: '✓';
 	padding-left: 5px;
 	color: forestgreen;
