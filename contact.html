@@ -11,95 +11,105 @@
     </head>
     <body>
         <div id="header-html"></div>
-        <main>
+        <main class="contact">
             <form action="sendToMySecondYearInIut.php" method="post">
-            <div>
-  			    <label for="surname">Nom</label>
-			    <input id="surname" name="uname" type="text" required>
-                <span class="validity"></span>
-            </div>
-            <div>
-                <label for="firstname">Prénom</label>
-                <input id="firstname" name="firstname" type="text" required>
-                <span class="validity"></span>
-            </div>
-            <div>
-                <label for="email">Adresse Email</label>
-                <input type="email" name="emailaddress" required>
-                <span class="validity"></span>
-            </div>
-            <div>
-                <label for="email">Code postal</label>
-                <input type="number" name="codepostal" min="1000" required>
-                <span class="validity"></span>
-            </div>
-            <div>
-                <label for="pays">Pays d'origine</label>
-                <select name="pays" required>
-                    <option value="allemagne">Allemagne</option>
-                    <option value="albanie">Albanie</option>
-                    <option value="andorre">Andorre</option>
-                    <option value="autriche">Autriche</option>
-                    <option value="bielorussie">Biélorussie</option>
-                    <option value="belgique">Belgique</option>
-                    <option value="bosnieHerzegovine">Bosnie-Herzégovine</option>
-                    <option value="bulgarie">Bulgarie</option>
-                    <option value="croatie">Croatie</option>
-                    <option value="danemark">Danemark</option>
-                    <option value="espagne">Espagne</option>
-                    <option value="estonie">Estonie</option>
-                    <option value="finlande">Finlande</option>
-                    <option value="france" selected>France</option>
-                    <option value="grece">Grèce</option>
-                    <option value="hongrie">Hongrie</option>
-                    <option value="irlande">Irlande</option>
-                    <option value="islande">Islande</option>
-                    <option value="italie">Italie</option>
-                    <option value="lettonie">Lettonie</option>
-                    <option value="liechtenstein">Liechtenstein</option>
-                    <option value="lituanie">Lituanie</option>
-                    <option value="luxembourg">Luxembourg</option>
-                    <option value="exRepubliqueYougoslaveDeMacedoine">Ex-République Yougoslave de Macédoine</option>
-                    <option value="malte">Malte</option>
-                    <option value="moldavie">Moldavie</option>
-                    <option value="monaco">Monaco</option>
-                    <option value="norvege">Norvège</option>
-                    <option value="paysBas">Pays-Bas</option>
-                    <option value="pologne">Pologne</option>
-                    <option value="portugal">Portugal</option>
-                    <option value="roumanie">Roumanie</option>
-                    <option value="royaumeUni">Royaume-Uni</option>
-                    <option value="russie">Russie</option>
-                    <option value="saintMarin">Saint-Marin</option>
-                    <option value="serbieEtMontenegro">Serbie-et-Monténégro</option>
-                    <option value="slovaquie">Slovaquie</option>
-                    <option value="slovenie">Slovénie</option>
-                    <option value="suede">Suède</option>
-                    <option value="suisse">Suisse</option>
-                    <option value="republiqueTcheque">République Tchèque</option>
-                    <option value="ukraine">Ukraine</option>
-                    <option value="vatican">Vatican</option>
-                </select>
-            </div>
-            <div>
-                <label for="parlerdenous">Comment avez-vous entendu parler de nous ?</label>
-                <select name="parlerdenous" required>
-                    <option value="connaissance">Connaissance</option>
-                    <option value="internet">Internet</option>
-                    <option value="rs">Réseaux Sociaux </option>
-                </select>
-            </div>
-            <div>
-                <label for="bday">Date à laquelle vous souhaitez être recontacté</label>
-                <input type="date" name="date" required>
-                <span class="validity"></span>
-            </div>
-            <div>
-                <label for="texte">Informations complémentaires</label>
-                <textarea name="texte" cols="30" rows="5" placeholder="Saisir un texte ici"></textarea>
-            </div>
-            <input type="submit" value="Envoyer" id="send">
-		</form>
+                <div>
+                    <label for="surname">Nom</label>
+                    <div>
+                        <input id="surname" name="uname" type="text" required>
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="firstname">Prénom</label>
+                    <div>
+                        <input id="firstname" name="firstname" type="text" required>
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Adresse Email</label>
+                    <div>
+                        <input type="email" name="emailaddress" required>
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Code postal</label>
+                    <div>
+                        <input type="number" name="codepostal" min="1000" required>
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="pays">Pays d'origine</label>
+                    <select name="pays" required>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="albanie">Albanie</option>
+                        <option value="andorre">Andorre</option>
+                        <option value="autriche">Autriche</option>
+                        <option value="bielorussie">Biélorussie</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="bosnieHerzegovine">Bosnie-Herzégovine</option>
+                        <option value="bulgarie">Bulgarie</option>
+                        <option value="croatie">Croatie</option>
+                        <option value="danemark">Danemark</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="estonie">Estonie</option>
+                        <option value="finlande">Finlande</option>
+                        <option value="france" selected>France</option>
+                        <option value="grece">Grèce</option>
+                        <option value="hongrie">Hongrie</option>
+                        <option value="irlande">Irlande</option>
+                        <option value="islande">Islande</option>
+                        <option value="italie">Italie</option>
+                        <option value="lettonie">Lettonie</option>
+                        <option value="liechtenstein">Liechtenstein</option>
+                        <option value="lituanie">Lituanie</option>
+                        <option value="luxembourg">Luxembourg</option>
+                        <option value="exRepubliqueYougoslaveDeMacedoine">Ex-République Yougoslave de Macédoine</option>
+                        <option value="malte">Malte</option>
+                        <option value="moldavie">Moldavie</option>
+                        <option value="monaco">Monaco</option>
+                        <option value="norvege">Norvège</option>
+                        <option value="paysBas">Pays-Bas</option>
+                        <option value="pologne">Pologne</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="roumanie">Roumanie</option>
+                        <option value="royaumeUni">Royaume-Uni</option>
+                        <option value="russie">Russie</option>
+                        <option value="saintMarin">Saint-Marin</option>
+                        <option value="serbieEtMontenegro">Serbie-et-Monténégro</option>
+                        <option value="slovaquie">Slovaquie</option>
+                        <option value="slovenie">Slovénie</option>
+                        <option value="suede">Suède</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="republiqueTcheque">République Tchèque</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="vatican">Vatican</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="parlerdenous">Comment avez-vous entendu parler de nous ?</label>
+                    <select name="parlerdenous" required>
+                        <option value="connaissance">Connaissance</option>
+                        <option value="internet">Internet</option>
+                        <option value="rs">Réseaux Sociaux </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="bday">Date à laquelle vous souhaitez être recontacté</label>
+                    <div>
+                        <input type="date" name="date" required>
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="texte">Informations complémentaires</label>
+                    <textarea name="texte" cols="30" rows="5" placeholder="Saisir un texte ici"></textarea>
+                </div>
+                <input type="submit" value="Envoyer" id="send">
+		    </form>
         </main>
     </body>
 </html>
