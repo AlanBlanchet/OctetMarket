@@ -221,3 +221,8 @@ nav {
 .but:hover>i {
 	transform: scale(1.2);
 }
+
+@media(max-width:1500px)
+{
+	
+}
