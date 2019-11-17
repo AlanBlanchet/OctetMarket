@@ -143,13 +143,20 @@ main > div > div:first-child,main > div > div:last-child{
 }
 
 .sub-menu > div{
-	padding: 7px;
-	margin:5px 5px;
 	border-bottom:2px solid var(--border-default);
 }
 
 .sub-menu > div:last-child{
 	border-bottom:none;
+}
+
+.sub-menu > div > a{
+	display: inline-block;
+	padding:8px 5px;
+	height:100%;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
 }
 
 .sub-menu > div:hover > a{
@@ -165,6 +172,7 @@ main > div > div:first-child,main > div > div:last-child{
 
 .recherche {
 	display: inline-block;
+	position: relative;
 	background-color: white;
 	height: 30px;
 	width: 30px;
@@ -175,6 +183,10 @@ main > div > div:first-child,main > div > div:last-child{
 	vertical-align: middle;
 	color: var(--main-color);
 	margin-right:20px; 
+}
+
+.recherche > i{
+	line-height: 30px;
 }
 
 .but {
