@@ -169,8 +169,13 @@ nav {
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	outline-style: none;
+	appearance: none;
 	background-color: var(--main-color);
 	color:white;
+}
+
+.s::-webkit-search-cancel-button{
+	-webkit-appearance: none;
 }
 
 .s::placeholder{
