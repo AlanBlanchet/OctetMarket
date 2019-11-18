@@ -27,6 +27,25 @@ nav {
 	overflow-y: visible;
 }
 
+footer {
+	position: relative;
+	display: flex;
+	bottom: 0px;
+	height: 200px;
+	background-color: #002e6e;
+}
+
+footer>div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-grow:1 ;
+	font-size: 20px;
+	margin: 50px;
+	text-align: left;
+}
+
 #header-1{
 	display: flex;
 	padding: 5px 0px;
