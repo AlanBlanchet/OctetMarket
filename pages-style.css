@@ -59,6 +59,7 @@ form > div > div, form > div > select, form > div > textarea{
 	width:50%;
 	text-align:left;
 	border-radius: 10px;
+	outline-style: none;
 }
 
 form input, form select {
