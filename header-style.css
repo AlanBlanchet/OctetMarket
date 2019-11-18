@@ -50,9 +50,22 @@ footer>div{
 }
 
 footer > div > div {
-	display: flex;
+	display:flex;
 	align-items: center;
-	justify-content: center;
+	width:80%;
+}
+
+footer > div > div > i{
+	text-align: right;
+}
+
+footer > div > div > p{
+	text-align: left;
+	width:100%;
+}
+
+footer > div{
+	background-color: red;
 }
 
 #header-1{
@@ -248,9 +261,4 @@ footer > div > div {
 
 .but:hover>i {
 	transform: scale(1.2);
-}
-
-@media(max-width:1500px)
-{
-	
 }
