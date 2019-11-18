@@ -9,6 +9,7 @@
 	--overlay-dark:rgba(50,100,150,0.95);
 	--background-color:rgb(30,30,30);
 	--background-overlay:rgba(0,0,0,0.2);
+	--hover-default:rgba(255,255,255,0.2);
 }
 
 body {
@@ -21,7 +22,6 @@ body {
 }
 
 main{
-    position: absolute;
 	top:102px;
 	z-index: 9;
 }
@@ -41,29 +41,65 @@ main + div > div:first-child,main + div > div:last-child{
 
 .slides{
 	z-index: 1;
-	width:400%;
+	width:420vw;
 	height:100%;
 }
 
 .slider{
+	display: flex;
 	float:left;
 	width:calc(100%/4);
 	height:100%;
+	overflow: hidden;
 	transform: translateX(0px);
-	animation: 20s infinite ease slider-anim;
+	animation: 30s infinite ease slider-anim;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .slides+div{
 	animation:none;
 }
-.main-slider > img{
-	height:200px;
-	width:200px;
-}
 
 .slider > img{
-	width:100%;
+	
+	width:auto;
+	min-width: 100%;
 	height:100%;
+	object-fit: cover;
+}
+
+.slider > div{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	top:50%;
+	transform: translateY(-50%);
+	left:10%;
+	right:65%;
+	padding:30px;
+	background-color: var(--background-overlay);
+	border-radius: 4px;
+	border-top:4px solid var(--main-color);
+	cursor:default;
+	transition: 1s;
+}
+
+.slider > div:hover{
+	background-color: var(--hover-default);
+}
+
+.slider > div > p{
+	border-radius: 4px;
+	padding:10px;
+	background-color: var(--background-overlay);
+	border-left: 4px solid var(--main-color);
+}
+
+.slider > div > h1{
+	padding:5px;
+	margin:10px 20px;
+	background-color:var(--background-overlay);
 }
 
 .container{
@@ -153,35 +189,36 @@ main + div > div:first-child,main + div > div:last-child{
 	z-index:5;
 	animation:0.5s 1 ease hover-slider-container;
 	animation-fill-mode: forwards;
+	transition:0.3s;
 }
 
 @keyframes slider-anim{
 	0%{
-		transform:translateX(0%);
+		transform:translateX(-5%);
 	}
-	12%{
+	20%{
 		transform: translateX(0%);
 	}
-	24%{
+	25%{
+		transform:translateX(-105%);
+	}
+	45%{
 		transform:translateX(-100%);
 	}
-	36%{
-		transform:translateX(-100%);
+	50%{
+		transform:translateX(-205%);
 	}
-	48%{
+	70%{
 		transform:translateX(-200%);
 	}
-	60%{
-		transform:translateX(-200%);
+	75%{
+		transform:translateX(-305%);
 	}
-	72%{
+	95%{
 		transform:translateX(-300%);
 	}
-	84%{
-		transform:translateX(-300%);
-	}
-	96%{
-		transform:translateX(0%);
+	100%{
+		transform:translateX(-5%);
 	}
 }
 
