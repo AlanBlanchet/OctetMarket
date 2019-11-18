@@ -80,6 +80,11 @@ main + div > div:first-child,main + div > div:last-child{
 	background-color:rgba(0,0,0,0.5);
 	border-top: 5px solid var(--third-color);
 	border-radius: 4px;
+	transition:0.5s;
+}
+
+.container-produit:hover{
+	border-top: 5px solid red;
 }
 
 .container-produit > *{
@@ -94,37 +99,60 @@ main + div > div:first-child,main + div > div:last-child{
 	flex-direction: column;
 	top:0px;
 	bottom: 0px;
+	padding:10px;
 	width:calc(100% - 20px);
 	height:70%;
 	background: var(--background-overlay);
 	border:8px solid var(--background-overlay);
 	box-sizing: border-box;
 	overflow: hidden;
+	transition: 0.5s;
 }
 
 .container-produit > div:last-child{
-	text-align: center;
+	position: relative;
+	display:flex;
+	align-items: center;
+	justify-content: center;
 	background-color:var(--main-color);
-	border:8px solid var(--secondary-color);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 	height:calc(30% - 40px);
 }
 
-.container-produit::before{
-	content:"";
-	width:100%;
-	height:100%;
-	background-color:var(--third-color);
+.container-produit > div:last-child > span{
+	font-size:30px;
+	font-family:Arial, Helvetica, sans-serif;
+	z-index:8;
+	text-align:center;
 }
 
 .container-produit > div > img{
 	display: block;
-	padding: 20px;
+	padding:20px;
 	max-width: calc(100% - 40px);
 	max-height: calc(100% - 40px);
 	height:auto;
 	width:auto;
 	margin:auto;
 	object-fit: contain;
+}
+
+.container-produit:hover > div:first-child{
+	padding:0px;
+}
+
+.container-produit:hover > div:last-child > div{
+	position: absolute;
+	height:100%;
+	width:0%;
+	left:0px;
+	background-color:red;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	z-index:5;
+	animation:0.5s 1 ease hover-slider-container;
+	animation-fill-mode: forwards;
 }
 
 @keyframes slider-anim{
@@ -154,6 +182,15 @@ main + div > div:first-child,main + div > div:last-child{
 	}
 	96%{
 		transform:translateX(0%);
+	}
+}
+
+@keyframes hover-slider-container{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:100%;
 	}
 }
 
