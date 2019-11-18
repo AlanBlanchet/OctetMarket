@@ -64,10 +64,6 @@ footer > div > div > p{
 	width:100%;
 }
 
-footer > div{
-	background-color: red;
-}
-
 #header-1{
 	display: flex;
 	padding: 5px 0px;
