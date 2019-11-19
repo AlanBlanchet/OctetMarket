@@ -33,6 +33,7 @@ footer {
 	bottom: 0px;
 	height: 200px;
 	background-color: #002e6e;
+	padding:0px 50px;
 }
 
 footer p{
@@ -40,28 +41,33 @@ footer p{
 }
 
 footer>div{
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	flex-grow: 1;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: left;
+	height: 100%;
 }
 
-footer > div > div {
+footer > div > div > div {
 	display:flex;
 	align-items: center;
-	width:80%;
 }
 
-footer > div > div > i{
+footer > div:nth-child(2) > div > i{
 	text-align: right;
 }
 
-footer > div > div > p{
+footer > div:nth-child(2) > div > p{
 	text-align: left;
 	width:100%;
+}
+
+footer > div > div:first-child{
+	font-size: 20px;
+	justify-content: center;
 }
 
 #header-1{
