@@ -21,10 +21,75 @@ nav {
 	background-color: var(--overlay-dark);
 	height: 50px;
 	display:flex;
+	justify-content: space-between;
 	position: sticky;
 	top:51px;
 	border-bottom: 1px solid white;
 	overflow-y: visible;
+}
+
+footer {
+	position: relative;
+	display: flex;
+	bottom: 0px;
+	background-color: #002e6e;
+	padding:0px 50px;
+}
+
+footer>div{
+	flex-grow: 1;
+	width:25%;
+	justify-content: center;
+	font-size: 16px;
+	height: 100%;
+}
+
+footer > div > div{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height:80%;
+}
+
+footer > div > div:first-child{
+	font-size: 20px;
+	justify-content: center;
+}
+
+footer > div > div > div {
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer > div > div > div > a{
+	margin:5px;
+	text-align: left;
+	padding-left: 10px;
+	width:65%;
+	overflow-x:hidden;
+}
+
+footer > div > div > div > *:last-child:hover{
+	opacity: .5;
+}
+
+footer > div > div > div > i{
+	opacity:0.5;
+	width:35%;
+	text-align: right;
+	padding-right: 10px;
+	/*transition: 0.5s;*/
+}
+
+footer > div > h2{
+	display: block;
+	height:20%;
+	vertical-align: middle;
+	margin:0px 10%;
+	padding:6px 0px;
+	text-align: center;
+	box-sizing: border-box;
 }
 
 #header-1{
@@ -51,6 +116,10 @@ nav {
 	color: var(--third-color);
 }
 
+#header-1>a:hover{
+	color:white;
+}
+
 #header-1::before{
 	content:"11010011 10010101 10111101 10010001 01011101 10110101 |";
 	margin-right: 20px;
@@ -67,31 +136,30 @@ nav {
 	align-items: center;
 	justify-content: flex-end;
 	padding: 10px;
-	width: 100%;
-	align-items: center;
-	justify-content: flex-end;
-	padding: 10px;
 }
 
 .menu-bar{
 	position: relative;
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	z-index: 50;
+	width:1050px;
+	flex-grow:1;
 	pointer-events: all;
 }
 
 .menu-bar > div{
 	position: relative;
-	margin: 7px 5px;
+	margin: 7px 0px;
 	width: 150px;
 	font-size:16px;
 	color: var(--text-default);
 	text-align: center;
 	transition: 0.2s linear;
 	cursor: pointer;
+	flex-grow:0;
 }
 
 .menu-bar > div > a{
@@ -124,6 +192,7 @@ nav {
 	display: none;
 	top:30px;
 	left:0px;
+	right:0px;
 	font-size:16px;
 	background-color:var(--main-color);
 	border-bottom-left-radius: 12px;
@@ -154,24 +223,41 @@ nav {
 }
 
 .s{
-	margin: 20px;
-	width: 25%;
-	display:none;
+	display:inline-block;
+	padding:7.5px;
+	padding-left:20px;
+	margin:10px;
+	margin-left:-13px;
+	width: 200px;
+	border:none;
+	border-right:6px solid white;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	outline-style: none;
+	appearance: none;
+	background-color: var(--main-color);
+	color:white;
+}
+
+.s::-webkit-search-cancel-button{
+	-webkit-appearance: none;
+}
+
+.s::placeholder{
+	color:rgba(255,255,255,0.6);;
 }
 
 .recherche {
-	display: inline-block;
 	position: relative;
-	background-color: white;
 	height: 30px;
 	width: 30px;
 	border-radius: 100%;
-	box-shadow: 0 5px 15px -5px #00000070;
 	text-align: center;
 	line-height: 30px;
 	vertical-align: middle;
-	color: var(--main-color);
-	margin-right:20px; 
+	color: white;
+	cursor:default;
+	background-color: var(--main-color);
 }
 
 .recherche > i{
@@ -199,4 +285,24 @@ nav {
 
 .but:hover>i {
 	transform: scale(1.2);
+}
+
+@media(max-width:480px)
+{
+
+}
+
+@media(max-width: 768px)
+{
+
+}
+
+@media(max-width: 992px)
+{
+
+}
+
+@media(max-width: 1200px)
+{
+	
 }
