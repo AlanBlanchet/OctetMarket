@@ -232,57 +232,22 @@ main + div > div:first-child,main + div > div:last-child{
 	}
 }
 
-@media(max-width:1150px)
+@media(max-width:480px)
 {
-	.container{
-		height:300px;
-	}
 
-	.container-produit{
-		margin:20px 60px;
-		margin-top:50px;
-	}
 }
 
-@media(max-width:930px)
+@media(max-width: 768px)
 {
-	.container{
-		height:300px;
-	}
+
 }
 
-@media(max-width:800px)
+@media(max-width: 992px)
 {
-	.container{
-		height:200px;
-	}
+
 }
 
-@media(max-width:700px)
+@media(max-width: 1200px)
 {
-	.container{
-		flex-direction: column;
-		height:calc(450px*3);
-	}
-
-	.container-produit{
-		margin:20px 140px;
-		margin-top:50px;
-	}
-}
-
-@media(max-width:650px)
-{
-	.container-produit{
-		margin:20px 100px;
-		margin-top:50px;
-	}
-}
-
-@media(max-width:450px)
-{
-	.container-produit{
-		margin:20px;
-		margin-top:50px;
-	}
+	
 }
