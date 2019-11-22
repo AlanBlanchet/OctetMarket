@@ -21,6 +21,7 @@ nav {
 	background-color: var(--overlay-dark);
 	height: 50px;
 	display:flex;
+	justify-content: space-between;
 	position: sticky;
 	top:51px;
 	border-bottom: 1px solid white;
@@ -114,31 +115,30 @@ footer > div > div:first-child{
 	align-items: center;
 	justify-content: flex-end;
 	padding: 10px;
-	width: 100%;
-	align-items: center;
-	justify-content: flex-end;
-	padding: 10px;
 }
 
 .menu-bar{
 	position: relative;
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	z-index: 50;
+	width:1050px;
+	flex-grow:1;
 	pointer-events: all;
 }
 
 .menu-bar > div{
 	position: relative;
-	margin: 7px 5px;
+	margin: 7px 0px;
 	width: 150px;
 	font-size:16px;
 	color: var(--text-default);
 	text-align: center;
 	transition: 0.2s linear;
 	cursor: pointer;
+	flex-grow:0;
 }
 
 .menu-bar > div > a{
@@ -171,6 +171,7 @@ footer > div > div:first-child{
 	display: none;
 	top:30px;
 	left:0px;
+	right:0px;
 	font-size:16px;
 	background-color:var(--main-color);
 	border-bottom-left-radius: 12px;
@@ -263,4 +264,24 @@ footer > div > div:first-child{
 
 .but:hover>i {
 	transform: scale(1.2);
+}
+
+@media(max-width:480px)
+{
+
+}
+
+@media(max-width: 768px)
+{
+
+}
+
+@media(max-width: 992px)
+{
+
+}
+
+@media(max-width: 1200px)
+{
+	
 }
