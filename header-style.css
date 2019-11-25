@@ -32,16 +32,20 @@ footer {
 	position: relative;
 	display: flex;
 	bottom: 0px;
-	background-color: #002e6e;
+	background: linear-gradient(to top, #372a52, var(--main-color));
+	border-top:2px solid white;
 	padding:0px 50px;
+	font-family: 'PT Sans', sans-serif;
 }
 
 footer>div{
-	flex-grow: 1;
 	width:25%;
 	justify-content: center;
 	font-size: 16px;
-	height: 100%;
+}
+
+footer > div:hover {
+	background-color:rgba(0,0,0,0.1);
 }
 
 footer > div > div{
@@ -60,6 +64,7 @@ footer > div > div > div {
 	display:flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-direction: row-reverse;
 }
 
 footer > div > div > div > a{
@@ -68,18 +73,40 @@ footer > div > div > div > a{
 	padding-left: 10px;
 	width:65%;
 	overflow-x:hidden;
+	cursor: pointer;
 }
 
-footer > div > div > div > *:last-child:hover{
-	opacity: .5;
+footer > div > div > div > a:hover + i{
+	opacity:1;
+}
+
+footer > div > div > div > a::before{
+	content: "";
+	position: absolute;
+	display: block;
+	height:0px;
+	width:2px;
+	opacity: 0;
+	transform: translateX(-10px);
+	background-color: white;
+	transition: 0.5s;
+}
+
+footer > div > div > div > a:hover::before{
+	height: 20px;
+	opacity: 1;
 }
 
 footer > div > div > div > i{
-	opacity:0.5;
+	opacity:0.2;
 	width:35%;
 	text-align: right;
 	padding-right: 10px;
-	/*transition: 0.5s;*/
+	transition: 0.2s;
+}
+
+footer > div > div > div > a:hover + img{
+	opacity:1;
 }
 
 footer > div > h2{
@@ -90,6 +117,7 @@ footer > div > h2{
 	padding:6px 0px;
 	text-align: center;
 	box-sizing: border-box;
+	cursor: default;
 }
 
 #header-1{
