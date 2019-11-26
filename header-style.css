@@ -19,7 +19,7 @@ nav {
 	z-index: 15;
 	font-family: "Montserrat", sans-serif;
 	background-color: var(--overlay-dark);
-	height: 50px;
+	height: auto;
 	display:flex;
 	justify-content: space-between;
 	position: sticky;
@@ -34,14 +34,16 @@ footer {
 	bottom: 0px;
 	background: linear-gradient(to top, #372a52, var(--main-color));
 	border-top:2px solid white;
-	padding:0px 50px;
 	font-family: 'PT Sans', sans-serif;
 }
 
 footer>div{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
 	width:25%;
-	justify-content: center;
 	font-size: 16px;
+	padding:5px 0px 20px 0px;
 }
 
 footer > div:hover {
@@ -52,7 +54,6 @@ footer > div > div{
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
-	height:80%;
 }
 
 footer > div > div:first-child{
@@ -65,22 +66,28 @@ footer > div > div > div {
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: row-reverse;
+	height:28px;
 }
 
-footer > div > div > div > a{
+footer > div > div > div > div {
 	margin:5px;
-	text-align: left;
 	padding-left: 10px;
 	width:65%;
 	overflow-x:hidden;
-	cursor: pointer;
+	pointer-events: none;
 }
 
-footer > div > div > div > a:hover + i{
+footer > div > div > div > div > a{
+	text-align: left;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+footer > div > div > div > div:hover + i{
 	opacity:1;
 }
 
-footer > div > div > div > a::before{
+footer > div > div > div > div::before{
 	content: "";
 	position: absolute;
 	display: block;
@@ -92,7 +99,7 @@ footer > div > div > div > a::before{
 	transition: 0.5s;
 }
 
-footer > div > div > div > a:hover::before{
+footer > div > div > div > div:hover::before{
 	height: 20px;
 	opacity: 1;
 }
@@ -105,18 +112,29 @@ footer > div > div > div > i{
 	transition: 0.2s;
 }
 
+footer > div > div > div > img{
+	display:block;
+	opacity:0.2;
+	width:35%;
+	height:70%;
+	object-fit: contain;
+	object-position: calc(100% - 8px) 0px;
+	transition: 0.2s;
+}
+
 footer > div > div > div > a:hover + img{
 	opacity:1;
 }
 
 footer > div > h2{
-	display: block;
-	height:20%;
-	vertical-align: middle;
 	margin:0px 10%;
 	padding:6px 0px;
-	text-align: center;
-	box-sizing: border-box;
+	height:60px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	text-align:center;
+	position:relative;
 	cursor: default;
 }
 
