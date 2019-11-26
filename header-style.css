@@ -9,6 +9,10 @@
 	--overlay-dark:rgba(30,80,130,0.9);
 }
 
+body{
+	min-height: 100vh;
+}
+
 a{
 	outline-style: none;
 	text-decoration: none;
@@ -19,7 +23,7 @@ nav {
 	z-index: 15;
 	font-family: "Montserrat", sans-serif;
 	background-color: var(--overlay-dark);
-	height: 50px;
+	height: auto;
 	display:flex;
 	justify-content: space-between;
 	position: sticky;
@@ -29,26 +33,36 @@ nav {
 }
 
 footer {
-	position: relative;
+	position: absolute;
 	display: flex;
 	bottom: 0px;
-	background-color: #002e6e;
-	padding:0px 50px;
+	padding: 0px 5%;
+	width:100vw;
+	box-sizing: border-box;
+	z-index: 9;
+	background: linear-gradient(-4deg, rgb(20,20,20),rgb(40,40,40), var(--main-color));
+	border-top:1px solid white;
+	font-family: 'PT Sans', sans-serif;
 }
 
 footer>div{
-	flex-grow: 1;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
 	width:25%;
-	justify-content: center;
 	font-size: 16px;
-	height: 100%;
+	padding:5px 0px 20px 0px;
+}
+
+footer > div:hover {
+	background-color:rgba(0,0,0,0.1);
 }
 
 footer > div > div{
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
-	height:80%;
+	flex-grow: 1;
 }
 
 footer > div > div:first-child{
@@ -60,36 +74,83 @@ footer > div > div > div {
 	display:flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-direction: row-reverse;
+	height:auto;
 }
 
-footer > div > div > div > a{
+footer > div > div > div > div {
 	margin:5px;
-	text-align: left;
 	padding-left: 10px;
 	width:65%;
 	overflow-x:hidden;
+	pointer-events: none;
 }
 
-footer > div > div > div > *:last-child:hover{
-	opacity: .5;
+footer > div > div > div > div > a{
+	text-align: left;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+footer > div > div > div > div:hover + i{
+	opacity:1;
+}
+
+footer > div > div > div > div::before{
+	content: "";
+	position: absolute;
+	display: block;
+	height:0px;
+	width:2px;
+	opacity: 0;
+	transform: translateX(-10px);
+	background-color: white;
+	transition: 0.5s;
+}
+
+footer > div > div > div > div:hover::before{
+	height: 20px;
+	opacity: 1;
 }
 
 footer > div > div > div > i{
-	opacity:0.5;
+	opacity:0.2;
 	width:35%;
 	text-align: right;
 	padding-right: 10px;
-	/*transition: 0.5s;*/
+	transition: 0.2s;
+	max-height:28px;
+}
+
+footer > div > div > div > img{
+	display:block;
+	opacity:0.2;
+	width:35%;
+	height:70%;
+	object-fit: contain;
+	object-position: calc(100% - 8px) 0px;
+	max-height:28px;
+	transition: 0.2s;
+}
+
+footer > div > div > div:hover > img{
+	opacity:1;
 }
 
 footer > div > h2{
-	display: block;
-	height:20%;
-	vertical-align: middle;
 	margin:0px 10%;
 	padding:6px 0px;
-	text-align: center;
-	box-sizing: border-box;
+	height:60px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	text-align:center;
+	position:relative;
+	cursor: default;
+}
+
+footer > div > div > div > p {
+	padding:0px 10px;
 }
 
 #header-1{
@@ -136,6 +197,7 @@ footer > div > h2{
 	align-items: center;
 	justify-content: flex-end;
 	padding: 10px;
+	box-sizing: border-box;
 }
 
 .menu-bar{
@@ -145,9 +207,9 @@ footer > div > h2{
 	align-items: center;
 	justify-content: space-around;
 	z-index: 50;
-	width:1050px;
 	flex-grow:1;
 	pointer-events: all;
+	flex-wrap: wrap;
 }
 
 .menu-bar > div{
@@ -224,7 +286,8 @@ footer > div > h2{
 
 .s{
 	display:inline-block;
-	padding:7.5px;
+	padding-bottom:7px;
+	padding-top:6px;
 	padding-left:20px;
 	margin:10px;
 	margin-left:-13px;
@@ -287,7 +350,21 @@ footer > div > h2{
 	transform: scale(1.2);
 }
 
-@media(max-width:480px)
+@media(max-width: 1410px)
+{
+/*	.menu-bar{
+		justify-content: space-between;
+		padding: 0px calc(calc(100vw - calc(150*4) - 350px) / 2);
+		padding:0px calc(calc(100vw - 1000px) / 2);
+	}*/
+}
+
+@media(max-width: 1200px)
+{
+	
+}
+
+@media(max-width: 992px)
 {
 
 }
@@ -297,12 +374,7 @@ footer > div > h2{
 
 }
 
-@media(max-width: 992px)
+@media(max-width:480px)
 {
 
-}
-
-@media(max-width: 1200px)
-{
-	
 }
