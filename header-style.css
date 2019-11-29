@@ -154,6 +154,10 @@ footer > div > div > div > p {
 	padding:0px 10px;
 }
 
+#header-html{
+	display: fixed;
+}
+
 #header-1{
 	display: flex;
 	padding: 5px 0px;
@@ -357,6 +361,19 @@ footer > div > div > div > p {
 	transform: scale(1.2);
 }
 
+.burger{
+	display: none;
+}
+
+@keyframes burger-anim{
+	0%{
+		left:0px;
+	}
+	100%{
+		left:70vw;
+	}
+}
+
 /* Juste pour le menu-bar*/
 @media(max-width: 1410px)
 {
@@ -385,12 +402,24 @@ footer > div > div > div > p {
 @media(max-width:480px)
 {
 	nav{
-		position: fixed;
-		top:-10000px;
-		width:100vw;
-		height:100vh;
-		background-color: rgba(80,80,150,0.8);
-		z-index: 21;
+		position: relative;
+		top:0px;
+		background-color: var(--main-color);
+		width:calc(100% - 52px);
+		pointer-events: auto;
+	}
+
+	nav:hover{
+		left:0px;
+	}
+
+	nav::after{
+		content:"";
+		position: absolute;
+		left:100%;
+		border-right: 2px solid white;
+		height: 100%;
+		background-color: blue;
 	}
 
 	#header-1{
@@ -398,7 +427,7 @@ footer > div > div > div > p {
 		height:50px;
 	}
 
-	#header-1>a{
+	#header-1 > a{
 
 	}
 
@@ -416,17 +445,39 @@ footer > div > div > div > p {
 		bottom:0px;
 	}
 
-	.burger{
+	.nav-menu{
 		position: fixed;
-		display: block;
+		display: flex;
+		width:calc(70% + 52px);
+		left:-70vw;
+		height:calc(100vh - 61px);
+		z-index: 21;
 		top:61px;
+		border:none;
+		box-sizing: border-box;
+		transition:0.3s;
+		pointer-events: none;
+	}
+
+	.nav-menu:hover{
+		left:0px;
+	}
+
+	.burger{
+		position: absolute;
+		display: block;
+		right:2px;
 		height:50px;
 		width:50px;
-		background-color: black;
+		background-color: var(--main-color);
 		border: none;
 		padding:0px;
 		cursor: pointer;
 		z-index: 22;
+		border-right:2px solid white;
+		border-bottom:2px solid white;
+		border-bottom-right-radius: 5px;
+		pointer-events: auto;
 	}
 
 	.burger > *{
@@ -434,21 +485,28 @@ footer > div > div > div > p {
 		height: 100%;
 	}
 
+	.burger > i::before{
+		position: relative;
+		color: white;
+		top: 4px;
+		display: block;
+		font-size: 40px;
+	}
+
 	.milieu{
-		display: hidden;
-		opacity: 0;
+		display: none;
 	}
 
 	.menu-bar{
-
+		width:100vw;
 	}
 
 	.menu-bar > div{
-
+		min-width:150px;
 	}
 
 	.menu-bar > div > a{
-
+		border-radius: 0px;
 	}
 
 	.menu-bar > div:nth-child(2):hover ,.menu-bar > div:nth-child(3):hover{
@@ -464,6 +522,6 @@ footer > div > div > div > p {
 	}
 
 	.menu-bar > span{
-
+		display: none;
 	}
 }

@@ -2,8 +2,9 @@ var htmlCode = '';
 htmlCode += '<div id="header-1">';
 htmlCode += '<a href="accueil.html">Octet Market</a>';
 htmlCode += '</div>';
+htmlCode += '<div class="nav-menu">';
 htmlCode += '<button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>';
-htmlCode += '<nav>';
+htmlCode += '<nav class="nav1">';
 htmlCode += '<div class="menu-bar">';
 htmlCode += '<div><a href="accueil.html">Accueil</a></div>';
 htmlCode += '<div>';
@@ -41,6 +42,7 @@ htmlCode += '<i class="fab fa-facebook-f"></i>';
 htmlCode += '</a>';
 htmlCode += '</div>';
 htmlCode += '</nav>';
+htmlCode += '</div>';
 
 window.onload = function(){
     let headerHTML = document.getElementById("header-html");
@@ -50,6 +52,6 @@ window.onload = function(){
 var burger = false;
 function SetBurger()
 {
-	document.getElementsByTagName("nav")[0].style.top = (burger)?"-100vh":"0px";
+	document.getElementsByClassName("nav-menu")[0].style.left=(burger)?"-70vw":"0px";
 	burger = !burger;
 }
