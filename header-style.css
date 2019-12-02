@@ -448,7 +448,7 @@ footer > div > div > div > p {
 	.nav-menu{
 		position: fixed;
 		display: flex;
-		width:calc(70% + 52px);
+		width:calc(70vw + 52px);
 		left:-70vw;
 		height:calc(100vh - 61px);
 		z-index: 21;
@@ -459,9 +459,9 @@ footer > div > div > div > p {
 		pointer-events: none;
 	}
 
-	.nav-menu:hover{
+/*	.nav-menu:hover{
 		left:0px;
-	}
+	}*/
 
 	.burger{
 		position: absolute;
@@ -499,14 +499,29 @@ footer > div > div > div > p {
 
 	.menu-bar{
 		width:100vw;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	.menu-bar > div{
-		min-width:150px;
+		position: relative;
+		box-sizing: border-box;
+		padding:3px;
+		margin:1px 0px;
+		height:auto;
+		justify-content: flex-start;
+		width:calc(100% - 8px);
+		border-right: 4px solid var(--third-color);
+		background-color: var(--fourth-color);
 	}
 
 	.menu-bar > div > a{
+		text-align: left;
+		padding-left: 10px;
 		border-radius: 0px;
+		border-bottom: 2px solid white;
+		margin-bottom: 2px;
+		box-sizing:border-box;
 	}
 
 	.menu-bar > div:nth-child(2):hover ,.menu-bar > div:nth-child(3):hover{
@@ -514,14 +529,50 @@ footer > div > div > div > p {
 	}
 
 	.menu-bar > div:hover{
-
-	}
-
-	.menu-bar > div:hover > .sub-menu{
-
+		background-color: var(--fourth-color);
+		border-radius: 0px;
+		color:var(--text-default);
+		font-size:16px;
 	}
 
 	.menu-bar > span{
 		display: none;
+	}
+
+	.sub-menu{
+		position: relative;
+		width:200px;
+		display: block;
+		top:0px;
+		left:20px;
+		font-size:16px;
+		background-color:rgba(0,0,0,0.1);
+		border-left:3px solid white;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		z-index: 80;
+	}
+
+	.sub-menu > div{
+		border-bottom:2px solid var(--border-default);
+		border-bottom: none;
+	}
+
+	.sub-menu > div:last-child{
+		border-bottom:none;
+	}
+
+	.sub-menu > div > a{
+		display: inline-block;
+		padding:8px 5px;
+		height:100%;
+		width: 100%;
+		text-align: center;
+		box-sizing: border-box;
+	}
+
+	.sub-menu > div:hover > a{
+		font-size:16px;
+		color:var(--text-default);
 	}
 }

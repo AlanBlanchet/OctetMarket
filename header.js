@@ -4,7 +4,7 @@ htmlCode += '<a href="accueil.html">Octet Market</a>';
 htmlCode += '</div>';
 htmlCode += '<div class="nav-menu">';
 htmlCode += '<button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>';
-htmlCode += '<nav class="nav1">';
+htmlCode += '<nav>';
 htmlCode += '<div class="menu-bar">';
 htmlCode += '<div><a href="accueil.html">Accueil</a></div>';
 htmlCode += '<div>';
