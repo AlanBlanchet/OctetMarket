@@ -19,17 +19,13 @@ body {
 }
 
 main{
-    position: absolute;
-	top:100px;
+    position: relative;
+    display: block;
 	z-index: 9;
 }
 
 main > div{
 	display: flex;
-}
-
-main > div > div:first-child,main > div > div:last-child{
-	flex-grow: 1.5;
 }
 
 .main-slider{
@@ -70,6 +66,36 @@ main > div > div:first-child,main > div > div:last-child{
 .slider > img{
 	width:100%;
 	height:100%;
+}
+
+.cartep{
+	display: flex;
+	height: 20%;
+	background-color: black;
+	flex-grow:1;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+	flex-direction: column;
+	width:100px;
+}
+
+.cartep>div>p {
+	width: 100%;
+	height: 100%;
+	padding: 5%;
+	text-align: center;
+	line-height: 50%;
+	box-sizing: border-box;
+}
+
+.cartep>div {
+	width: 100%;
+	background-color: blue;
+}
+
+.produits {
+	flex-wrap: wrap;
 }
 
 @keyframes slider-anim{
