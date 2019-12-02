@@ -512,7 +512,7 @@ footer > div > div > div > p {
 		justify-content: flex-start;
 		width:calc(100% - 8px);
 		border-right: 4px solid var(--third-color);
-		background-color: var(--fourth-color);
+		background-color: rgba(0,0,0,0.2);
 	}
 
 	.menu-bar > div > a{
