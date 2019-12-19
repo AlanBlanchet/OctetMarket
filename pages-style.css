@@ -136,7 +136,7 @@ main > div{
 	line-height: 50%;
 	box-sizing: border-box;
 	font-size: 150%;
-	z-index: 1;
+	z-index: 10;
 }
 
 .cartep>div:last-child {
@@ -184,16 +184,17 @@ main > div{
 	background-color: white;
 	position: absolute;
 	right: 0;
-	opacity: 0.5;
-	display: none;
-	/*transform: translateX(-100%);*/
+	opacity: 0;
+	transform: translateY(-100%);
 	transition: 0.5s;
 }
 
 .cartep:hover #infos {
 	display: flex;
 	transition: 0.5s;
-	/*transform: translateX(0%);*/
+	transform: translateY(0%);
+	z-index: 1;
+	opacity: 0.5;
 }
 
 .produits {
