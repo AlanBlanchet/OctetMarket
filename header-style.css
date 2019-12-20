@@ -23,8 +23,8 @@ a{
 nav {
 	z-index: 15;
 	font-family: "Montserrat", sans-serif;
-	background-color: var(--overlay-dark);
 	height: auto;
+	min-width: 256px;
 	display:flex;
 	justify-content: space-between;
 	position: sticky;
@@ -32,8 +32,7 @@ nav {
 	border-bottom: 1px solid white;
 	overflow-y: visible;
 	transition:.1s;
-	min-width: 256px;
-	background-color: var(--overlay-dark) !important;
+	background-color: var(--overlay-dark);
 }
 
 footer {
@@ -135,7 +134,7 @@ footer > div > div > div > img{
 	height:70%;
 	object-fit: contain;
 	object-position: calc(100% - 8px) 0px;
-	max-height:28px;
+	max-height:1.5em;
 	transition: 0.2s;
 }
 
@@ -226,7 +225,7 @@ footer > div > div > div > p {
 	position: relative;
 	margin: 7px 0px;
 	width: 150px;
-	font-size:16px;
+	font-size:1em;
 	color: var(--text-default);
 	text-align: center;
 	transition: 0.2s linear;
@@ -299,6 +298,10 @@ footer > div > div > div > p {
 .sub-menu > div:hover > a{
 	font-size:17px;
 	color:var(--text-select);
+}
+
+.nav-menu{
+	background-color:var(--overlay-dark);
 }
 
 .s{
@@ -405,9 +408,10 @@ footer > div > div > div > p {
 	nav{
 		position: relative;
 		top:0px;
-		background-color: var(--main-color);
+		background-color: #003e7e;
 		width:calc(100% - 52px);
 		pointer-events: auto;
+		height: min-content;
 	}
 
 	nav:hover{
@@ -462,10 +466,6 @@ footer > div > div > div > p {
 		pointer-events: none;
 	}
 
-/*	.nav-menu:hover{
-		left:0px;
-	}*/
-
 	.burger{
 		position: absolute;
 		display: block;
@@ -482,6 +482,7 @@ footer > div > div > div > p {
 		border-bottom-right-radius: 5px;
 		pointer-events: auto;
 		transition:0.4s linear;
+		outline-style: none;
 	}
 
 	.burger > *{
@@ -502,11 +503,13 @@ footer > div > div > div > p {
 	}
 
 	.menu-bar{
-		width:100vw;
+		position:absolute;
+		width:100%;
 		flex-direction: column;
 		flex-wrap: nowrap;
 		align-items: flex-start;
-		overflow-y: scroll;
+		display:flex;
+		top:0px;
 	}
 
 	.menu-bar > div{
@@ -579,6 +582,10 @@ footer > div > div > div > p {
 	.sub-menu > div:hover > a{
 		font-size:16px;
 		color:var(--text-default);
+	}
+
+	.nav-menu{
+		background-color:rgba(0,0,0,0);
 	}
 }
 
