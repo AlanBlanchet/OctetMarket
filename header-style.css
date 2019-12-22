@@ -510,9 +510,9 @@ footer > div > div > div > p {
 		flex-direction: column;
 		flex-wrap: nowrap;
 		align-items: flex-start;
+		justify-content: space-between;
 		display:flex;
 		overflow-y: scroll;
-		scrollbar-color:;
 		top:0px;
 	}
 
@@ -521,12 +521,10 @@ footer > div > div > div > p {
 		box-sizing: border-box;
 		padding:3px;
 		margin:1px 0px;
-		justify-content: flex-start;
 		width:calc(100% - 8px);
 		border-right: 4px solid var(--third-color);
 		border-top:1px solid white;
 		background-color: var(--fourth-color);
-		overflow-y: scroll;
 	}
 
 	.menu-bar > div > a{
