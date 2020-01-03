@@ -102,16 +102,21 @@ main + div > div:first-child,main + div > div:last-child{
 	background-color:var(--background-overlay);
 }
 
+.pages-produits{
+	flex-wrap: wrap;
+}
+
 .container{
 	position: relative;
 	display: flex;
-	padding: 70px 0px;
+	padding: 50px 0px;
 	background-color: var(--background-overlay);
 }
 
 .container-produit{
 	flex-grow: 1;
-	margin:0px 4%;
+	margin:20px 4%;
+	height:auto;
 	background-color:rgba(0,0,0,0.5);
 	border-top: 5px solid var(--third-color);
 	border-radius: 4px;
@@ -133,15 +138,14 @@ main + div > div:first-child,main + div > div:last-child{
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	top:0px;
-	bottom: 0px;
-	padding:10px;
 	width:calc(100% - 20px);
 	height:70%;
+	padding:10px;
+	box-sizing: border-box;
 	background: var(--background-overlay);
 	border:8px solid var(--background-overlay);
 	overflow: hidden;
-	transition: 0.5s;
+	transition:0.5s;
 }
 
 .container-produit > div:last-child{
@@ -152,7 +156,7 @@ main + div > div:first-child,main + div > div:last-child{
 	background-color:var(--main-color);
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
-	height:calc(30% - 40px);
+	height:calc(30% - 30px);
 }
 
 .container-produit > div:last-child > span{
@@ -163,17 +167,14 @@ main + div > div:first-child,main + div > div:last-child{
 }
 
 .container-produit > div > img{
-	display: block;
 	padding:20px;
 	max-width: calc(100% - 40px);
 	max-height: calc(100% - 40px);
-	height:auto;
-	width:auto;
 	margin:auto;
 	object-fit: contain;
 }
 
-.container-produit:hover > div:first-child {
+.container-produit:hover > div:first-child{
 	padding:0px;
 }
 
@@ -280,6 +281,23 @@ main + div > div:first-child,main + div > div:last-child{
 	color: var(--main-color);
 	margin-left: auto;
 	border-radius:4px;
+}
+
+.container-commentaire-plus{
+	display:flex;
+	width:100%;
+	padding:10px;
+	justify-content: center;
+}
+
+.container-commentaire-plus > a {
+	padding:10px 30px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 20px;
+	background-color: var(--background-overlay);
+	border-top: 2px solid var(--main-color);
+	border-radius: 4px;
 }
 
 @keyframes slider-anim{
