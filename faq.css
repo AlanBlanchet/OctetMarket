@@ -26,8 +26,9 @@ body {
 }
 
 .titre {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    max-width: 270px;
     font-size: 40px;
 }
 
@@ -50,7 +51,7 @@ body {
     margin: 5px 0;
     max-height: 0;
     overflow: hidden;
-    z-index: -1;
+    z-index: 10;
     position: relative;
     opacity: 0;
     -webkit-transition: .7s ease;
@@ -97,5 +98,12 @@ body {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     border-left: 3px solid var(--main-color);
+}
 
+main > div {
+    margin-top: 20px;
+    display: flex;
+    background-color: var(--background-overlay);
+    align-items:  center;
+    flex-direction: column;
 }
