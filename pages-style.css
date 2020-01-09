@@ -80,6 +80,7 @@ main > div{
 	border-radius: 5px;
 	border-top: 5px solid var(--main-color);
 	transition: 0.5s;
+	cursor : default;
 }
 
 
@@ -94,9 +95,10 @@ main > div{
 	max-width: calc(100% - 40px);
 	max-height: calc(100% - 40px);
 	top : 0;
+	overflow: hidden;
 }
 
-.cartep>div:first-child>div>p{
+.cartep>div:first-child>div:first-child>p{
 	padding: 5px;
 	margin: 10px 5px;
 	text-align: center;
@@ -180,21 +182,25 @@ main > div{
 
 #infos {
 	height: 100%;
-	width: 100%;
-	background-color: white;
+	width: calc(100% - 150px);
+	background-color: rgba(0,0,0,0);
 	position: absolute;
-	right: 0;
-	opacity: 0;
-	transform: translateY(-100%);
+	left:100%;
 	transition: 0.5s;
+	line-height: 100%;
+}
+
+#infos>p {
+	line-height: 100%;
+	text-align: right;
+	padding-right: 10%;
+	font-size: 125%;
 }
 
 .cartep:hover #infos {
-	display: flex;
+	left:150px;
 	transition: 0.5s;
-	transform: translateY(0%);
-	z-index: 1;
-	opacity: 0.5;
+	background-color: rgba(0,0,0,0.9);
 }
 
 .produits {
