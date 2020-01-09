@@ -17,42 +17,77 @@ main{
 	width:100%;
 }
 
-.equipe-container {
-	position:relative;
-	display: block;
-	background-color: var(--background-overlay);
-	margin: 3%;
-	height: 300px;
-	width: 60%;
-	border-radius: 4px;
-	border-color: 4px solid var(--background-overlay);
+.equipe-structure{
+	position: relative;
+	width:100%;
+	display: flex;
 }
 
-.equipe-container > div{
+.equipe-structure:nth-child(2n){
+	justify-content: flex-end;
+}
+
+.equipe-structure:nth-child(2n+1){
+	justify-content: flex-start;
+}
+
+.equipe-structure:nth-child(2n+1) > .equipe-container {
+	position:relative;
+	display: block;
+	width: 50%;
+	height: 10vh;
+	margin: 60px;
+	min-height:250px;
+	min-width: 420px;
+}
+
+.equipe-structure:nth-child(2n+1) > .equipe-container > div{
 	display:flex;
 	width: 100%;
 	height:100%;
-	transition: 0.3s;
-	border: 2px solid var(--main-color);
+	transition: 0.5s;
+	border-top: 4px solid var(--main-color);
+	box-sizing: border-box;
 	border-radius: 4px;
+	background-color: rgb(5,5,5);
 }
 
-.equipe-container > div > div:first-child {
-	padding: 35px;
+.equipe-structure:nth-child(2n+1) > .equipe-container > div:nth-child(2){
+	position: absolute;
+	z-index:-1;
+	left:50%;
+	top:0px;
+	padding: 30px;
+	transition: 0.8s;
+	opacity: 0;
+	width: 80%;
+	height:100%;
+}
+
+.equipe-structure:nth-child(2n+1) > .equipe-container > div:nth-child(2) > h4{
+	margin: 0;
+}
+
+.equipe-structure:nth-child(2n+1) > .equipe-container > div > div:first-child {
+	box-sizing: border-box;
 	border-radius: 4px;
-	width: calc(300px - 70px);
 	background-color:var(--background-overlay);
 	border-right: 2px solid var(--main-color);
 	border-bottom-right-radius:0px;
 	border-top-right-radius:0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
 }
 
-.equipe-container > div > div:first-child > img{
-	border-radius: 20px;	
+.equipe-structure:nth-child(2n+1) > .equipe-container > div > div:first-child > img{
+	border-radius: 8px;
+	height:80%;
+	object-fit: contain;
 }
 
-.equipe-container > div > div:last-child{
-	height:100%;
+.equipe-structure:nth-child(2n+1) > .equipe-container > div > div:nth-child(3){
+	padding:20px 10px;
 	flex-grow: 1;
 	width:auto;
 	display: flex;
@@ -61,35 +96,143 @@ main{
 	flex-direction: column;
 }
 
-.equipe-container > div > div:last-child > *{
+.equipe-structure:nth-child(2n+1) > .equipe-container > div > div:nth-child(3) > *{
 	display: block;
 	width:100%;
-	padding-left: 30px;
 	text-align: left;
+	margin:0;
 }
 
-.equipe-container > div > div:last-child > h1{
-	font-size: 3em;
+.equipe-structure > .equipe-container > div > div:nth-child(3) > h1{
+	font-size: 2.5em;
 }
 
-.equipe-container > div > div:last-child > h3{
+.equipe-structure > .equipe-container > div > div:nth-child(3) > h3{
+	font-size: 1.8em;
+}
+
+.equipe-structure > .equipe-container > div > div:last-child > h4{
 	font-size: 2em;
 }
-.nom-metier{
-	position: absolute;
-	background: linear-gradient(var(--background-color),var(--main-color)); 
-	font-style: italic; 
-	border-radius: 15px;
-	top: -20px;
-	left: 50%;
-	margin:0px;
-	padding: 5px 20px;
-	transform: translateX(-50%);
-}
-.equipe-container > div > div > h2 {
+
+.equipe-structure > .equipe-container > div > div > h2 {
 	margin: 0px;
+	text-shadow: 0em 0.1em 0.1em rgb(10,10,10);
 }
 
-.equipe-container > div:hover{
-	background-color: var(--background-overlay); 
-}	
+.equipe-structure:nth-child(2n+1) > .equipe-container > div:hover{
+	border-right:2px solid var(--main-color);
+	border-bottom-right-radius: 0;
+	background-color: rgb(15,15,15);
+}
+
+.equipe-structure:nth-child(2n+1) > .equipe-container > div:hover+div, .equipe-container:nth-child(2n+1) > div+div:hover{
+	left:calc(100% - 6px);
+	opacity: 1;
+}
+
+.equipe-structure:nth-child(2n+1) > .equipe-container > div > div:nth-child(2){
+	position: absolute;
+	background: linear-gradient(rgb(10,10,10),rgb(5,5,5)); 
+	font-style: italic; 
+	border-radius: 15px;
+	top: -28px;
+	left: 150px;
+	padding: 5px 20px;
+	transform: translateX(-50%);
+	border-bottom: 2px solid var(--main-color);
+}
+
+/*===========================  SEPARATION ===========================*/
+
+.equipe-structure:nth-child(2n) > .equipe-container {
+	position:relative;
+	display: block;
+	right: 0px;
+	width: 50%;
+	height: 10vh;
+	margin: 60px 40px;
+	min-height:250px;
+	min-width: 420px;
+}
+
+.equipe-structure:nth-child(2n) > .equipe-container > div{
+	display:flex;
+	width: 100%;
+	height:100%;
+	flex-direction: row-reverse;
+	transition: 0.5s;
+	border-top: 4px solid var(--main-color);
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: rgb(5,5,5);
+}
+
+.equipe-structure:nth-child(2n) > .equipe-container > div:nth-child(2){
+	position: absolute;
+	z-index:-1;
+	right:50%;
+	top:0px;
+	padding: 30px;
+	transition: 0.8s;
+	opacity: 0;
+	width: 80%;
+	height:100%;
+}
+
+.equipe-structure:nth-child(2n) > .equipe-container > div > div:first-child {
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color:var(--background-overlay);
+	border-left: 2px solid var(--main-color);
+	border-bottom-left-radius:0px;
+	border-top-left-radius:0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.equipe-structure:nth-child(2n) > .equipe-container > div > div:first-child > img{
+	border-radius: 8px;
+	height:80%;
+	object-fit: contain;
+}
+
+.equipe-structure:nth-child(2n) > .equipe-container > div > div:nth-child(3){
+	padding:20px 10px;
+	flex-grow: 1;
+	width:auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.equipe-structure:nth-child(2n) > .equipe-container > div > div:nth-child(3) > *{
+	display: block;
+	width:100%;
+	text-align: right;
+	margin:0;
+}
+
+.equipe-structure:nth-child(2n) > .equipe-container > div:hover{
+	border-left:2px solid var(--main-color);
+	border-bottom-right-radius: 0;
+	background-color: rgb(15,15,15);
+}
+
+.equipe-structure:nth-child(2n) > .equipe-container > div:hover+div, .equipe-container:nth-child(2n) > div+div:hover{
+	right:calc(100% - 6px);
+	opacity: 1;
+}
+
+.equipe-structure:nth-child(2n) > .equipe-container > div > div:nth-child(2){
+	position: absolute;
+	background: linear-gradient(rgb(10,10,10),rgb(5,5,5)); 
+	font-style: italic; 
+	border-radius: 15px;
+	top: -28px;
+	padding: 5px 20px;
+	transform: translateX(-50%);
+	border-bottom: 2px solid var(--main-color);
+}
