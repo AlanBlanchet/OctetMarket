@@ -22,7 +22,6 @@ body {
     width: 80%;
     padding: 20px;
     margin: 0 auto;
-    /*padding: 0 60px 0 0;*/
 }
 
 .titre {
@@ -30,6 +29,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     font-size: 40px;
+    margin: 1px 0 ;
 }
 
 .question {
@@ -46,7 +46,7 @@ body {
 }
 
 .reponse {
-    background: #999;
+    background: var(--overlay-dark);
     padding: 0px 15px;
     margin: 5px 0;
     max-height: 0;
@@ -54,9 +54,6 @@ body {
     z-index: 10;
     position: relative;
     opacity: 0;
-    -webkit-transition: .7s ease;
-    -moz-transition: .7s ease;
-    -o-transition: .7s ease;
     transition: .7s ease;
 }
 
@@ -101,9 +98,12 @@ body {
 }
 
 main > div {
-    margin-top: 20px;
     display: flex;
     background-color: var(--background-overlay);
     align-items:  center;
     flex-direction: column;
+    margin: 35px 10%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-left: 4px solid var(--main-color);
 }
