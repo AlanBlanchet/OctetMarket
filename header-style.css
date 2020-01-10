@@ -109,7 +109,7 @@ nav {
 .menu-bar > div:hover{
 	background-color:var(--main-color);
 	border-radius: 40px;
-	color:var(--text-select);
+	/* color:var(--text-select); */
 	font-size:17px;
 }
 
