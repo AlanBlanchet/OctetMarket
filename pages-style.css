@@ -18,20 +18,6 @@ body {
 	color:white;
 }
 
-main{
-    position: absolute;
-	top:100px;
-	z-index: 9;
-}
-
-main > div{
-	display: flex;
-}
-
-main > div > div:first-child,main > div > div:last-child{
-	flex-grow: 1.5;
-}
-
 .main-slider{
 	position: relative;
 	flex:3;

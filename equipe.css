@@ -236,3 +236,48 @@ main{
 	transform: translateX(-50%);
 	border-bottom: 2px solid var(--main-color);
 }
+
+@media (max-width:992px) {
+
+	.equipe-structure.equipe-structure.equipe-structure.equipe-structure > .equipe-container > div:nth-child(2){	
+		border-right: 2px solid var(--main-color);
+		height: auto;
+	}
+
+	.equipe-structure:nth-child(2n) > .equipe-container > div:nth-child(2){
+		position: absolute;
+		z-index:10;
+		border-top:none;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+		top:calc(100% - 20px);
+		left:0px;
+		padding: 30px;
+		transition: 0.8s;
+		opacity: 0;
+	}
+	.equipe-structure:nth-child(2n) > .equipe-container > div:hover+div, .equipe-container:nth-child(2n) > div+div:hover{
+		top:100%;
+		left:0px;
+		opacity: 1;
+	}
+
+	.equipe-structure:nth-child(2n+1) > .equipe-container > div:nth-child(2){
+		position: absolute;
+		z-index:10;
+		border-top:none;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+		left:0px;
+		top:calc(100% - 20px);
+		padding: 30px;
+		transition: 0.8s;
+		opacity: 0;
+	}
+
+	.equipe-structure:nth-child(2n+1) > .equipe-container > div:hover+div, .equipe-container:nth-child(2n+1) > div+div:hover{
+		top:100%;
+		left:0px;
+		opacity: 1;
+	}
+}
