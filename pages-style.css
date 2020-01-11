@@ -73,6 +73,12 @@ main > div > div:first-child,main > div > div:last-child{
 	height:100%;
 }
 
+@media (max-width:900px) {
+	form>div{
+		flex-direction: column;
+	}
+}
+
 @keyframes slider-anim{
 	0%{
 		transform:translateX(0%);

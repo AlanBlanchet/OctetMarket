@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Octet-Market</title>
         <link rel="stylesheet" type="text/css" href="header-style.css">
-        <link rel="stylesheet" type="text/css" href="pages-style.css">
         <link rel="stylesheet" href="contact.css">
         <link rel="shortcut icon" href="icon.png">
         <script src="https://kit.fontawesome.com/29189c846f.js" crossorigin="anonymous"></script>
@@ -16,28 +15,28 @@
             <form action="" method="post">
                 <div>
                     <label for="surname">Nom</label>
-                    <div>
+                    <div class="validity">
                         <input id="surname" name="uname" type="text" required placeholder="Votre Nom">
                         <span class="validity"></span>
                     </div>
                 </div>
                 <div>
                     <label for="firstname">Prénom</label>
-                    <div>
+                    <div class="validity">
                         <input id="firstname" name="firstname" type="text" required placeholder="Votre Prénom">
                         <span class="validity"></span>
                     </div>
                 </div>
                 <div>
                     <label for="email">Adresse Email</label>
-                    <div>
+                    <div class="validity">
                         <input type="email" name="emailaddress" required placeholder="Votre Email">
                         <span class="validity"></span>
                     </div>
                 </div>
                 <div>
                     <label for="email">Code postal</label>
-                    <div>
+                    <div class="validity">
                         <input type="number" name="codepostal" min="1000" required placeholder="Votre Code Postal">
                         <span class="validity"></span>
                     </div>

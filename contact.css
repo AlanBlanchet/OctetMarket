@@ -9,6 +9,29 @@
 	--overlay-dark:rgba(50,100,150,0.95);
 }
 
+body {
+	background-color: rgb(30,30,30);
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	color:white;
+}
+
+main{
+    position: absolute;
+	top:100px;
+	z-index: 9;
+	width:100%;
+}
+
+main > div{
+	display: flex;
+}
+
+main > div > div:first-child,main > div > div:last-child{
+	flex-grow: 1.5;
+}
+
 form {
 	display: block;
 	padding:20px;
@@ -84,24 +107,21 @@ textarea {
 }
 
 @media (max-width:900px) {
-    form {
-        width: 50%;
-        padding: 10%;
-        margin: 10%;
-    }
+	form>div{
+		flex-direction: column;
+	}
 
-    form > div > label {
-        width: 50%;
-    }
+	.validity{
+		display: inline-block;
+	}
 
-    form > div {
-        margin: 2px;
-    }
+	form > div >label{
+		text-align: left;
+		width:90%
+	}
 
-    form > div > div, form > div > select, form > div > textarea{
-        width:20%;
-        text-align:right;
-        border-radius: 10px;
-        outline-style: none;
-    }
-}
+
+	form > div > div, form > div > select, form > div > textarea{
+		width:auto;
+
+  }
