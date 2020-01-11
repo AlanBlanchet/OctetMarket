@@ -15,10 +15,17 @@ body {
     background-color: var(--background-color);
     padding: 0;
     margin: 0;
+    height: 2000px;
     overflow-x: hidden;
     color:white;
 
 }
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
 .poignee{
     display: flex;
     flex-grow:1;  
@@ -33,7 +40,7 @@ p{
     padding: 1%;
     margin:auto;
     text-align: center;
-    font-family: Ariel, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 7vh;
 }
 
@@ -46,21 +53,21 @@ p{
 .metier{
     padding: 15px;
     margin: 1.5% 3% 0 3%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: rgb(0,0,0,0.5);
     border-radius: 5px;
     border-top: 5px solid var(--main-color);
     transition: 0.5s;
     position: relative;
     text-align: center;
-    font-size: 5.5vh;
+    font-size: 3.7vh;
 }
 
 .infometier{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background: var(--overlay-dark);
     padding: 0px 15px;
-    margin: 0% 3.5% 0 3.5%;
+    margin: 0 3.5%;
     max-height: 0;
     font-size:3vh ;
     overflow: hidden;

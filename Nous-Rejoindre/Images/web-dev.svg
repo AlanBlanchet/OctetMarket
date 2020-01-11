@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>_développement web &amp; symfony</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="_développement-web-&amp;-symfony" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(77.000000, 135.000000)">
+            <rect id="Rectangle-12" stroke="#34005B" stroke-width="10" x="0" y="0" width="346" height="226" rx="14"></rect>
+            <path d="M5.5,41.5 L340.983234,41.5" id="Line" stroke="#34005B" stroke-width="10" stroke-linecap="square"></path>
+            <circle id="Oval-8" fill="#34005B" cx="24" cy="21" r="6"></circle>
+            <circle id="Oval-8-Copy" fill="#6441DA" cx="44" cy="21" r="6"></circle>
+            <g id="Group" transform="translate(83.000000, 88.000000)" stroke-linecap="round" stroke-width="10">
+                <polyline id="Rectangle-13" stroke="#6441DA" stroke-linejoin="round" transform="translate(41.719300, 41.719300) rotate(-45.000000) translate(-41.719300, -41.719300) " points="12.2193001 71.2193001 12.2193001 12.2193001 71.2193001 12.2193001"></polyline>
+                <polyline id="Rectangle-13-Copy" stroke="#6441DA" stroke-linejoin="round" transform="translate(138.719300, 41.719300) rotate(-225.000000) translate(-138.719300, -41.719300) " points="109.2193 71.2193001 109.2193 12.2193001 168.2193 12.2193001"></polyline>
+                <path d="M67.2193001,89.5 L109.2193,0.5" id="Line-2" stroke="#FF00A4"></path>
+            </g>
+        </g>
+    </g>
+</svg>
