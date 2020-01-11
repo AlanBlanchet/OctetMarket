@@ -1,3 +1,4 @@
+
 :root{
 	--main-color:#2980b9;
 	--secondary-color: #34495e;
@@ -6,14 +7,16 @@
 	--border-default:white;
 	--text-default:white;
 	--text-select:#bdc3c7;
+	--background-color:rgb(30,30,30);
 	--overlay-dark:rgba(50,100,150,0.95);
 }
 
+
+
 body {
-	background-color: #3498db;
+	background-color: var(--background-color);
 	padding: 0;
 	margin: 0;
-    height:3000px;
 	overflow-x: hidden;
 	color:white;
 }
@@ -30,6 +33,64 @@ main > div{
 
 main > div > div:first-child,main > div > div:last-child{
 	flex-grow: 1.5;
+}
+
+.poste{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	background-color: rgb(0,0,0,0.5);
+	margin:2%;
+	flex-direction: column;
+	border-radius: 5px;
+	border-top: 5px solid var(--main-color);
+	transition: 0.5s;
+}
+.entete{
+	border-radius: 5px;
+	border-left: 5px solid var(--main-color);
+	display: flex;
+	display: inline-flex;
+	background-color: rgb(0,0,0,0.8);
+	margin:2% 5%;
+	padding: 1%; 
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.entete>img{
+	display:flex;
+	flex-grow: ;
+
+}
+.entete>p{
+	display: flex;
+	padding: 0px;
+	font-size:400%; 
+	align-items: center;
+	justify-content: center;
+	margin:20px;
+	flex-grow: 1;
+}
+
+.poste>div:last-child>p{
+	margin:20px;
+	border-radius: 5px;
+	border-left: 5px solid var(--main-color);
+	padding:  0.25% 0.5%;
+	background-color: rgb(0,0,0,0.8);
+}
+
+#postule{
+	margin: 0 10%;
+	display:flex;
+	padding: 20px;
+	background-color: blue;
+	flex-grow: 1;
+}
+
+#postule:hover{
+	
 }
 
 .main-slider{
