@@ -152,7 +152,7 @@ main{
 	width: 150px;
 	background-color: var(--main-color);
 	transform : rotate(45deg);
-	z-index: 0;
+	z-index: 10;
 }
 
 .cartep>div:first-child>div{
@@ -198,6 +198,7 @@ main{
 .cartep> div>img{
 	transition: 0.5s;
 	transform: scale(0.9);
+	z-index: 0;
 }
 
 .cartep:hover>div:last-child>div{
