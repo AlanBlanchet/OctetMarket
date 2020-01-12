@@ -1,18 +1,176 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Octet-Market</title>
-        <link rel="stylesheet" type="text/css" href="header-style.css">
-        <link rel="stylesheet" type="text/css" href="pages-style.css">
         <link rel="shortcut icon" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="page-structure.css">
+        <link rel="stylesheet" type="text/css" href="pages-style.css">
+        <link rel="stylesheet" type="text/css" href="faq.css">
         <script src="https://kit.fontawesome.com/29189c846f.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="header.js"></script>
+        <script type="text/javascript" src="burger.js"></script>
     </head>
     <body>
-        <div id="header-html"></div>
+        <header id="header-html">
+            <div id="header-1">
+                <a href="index.html">Octet Market</a>
+            </div>
+            <div class="nav-menu">
+                <button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>
+                <nav>
+                    <div class="menu-bar">
+                        <div><a href="index.html">Accueil</a></div>
+                        <div>
+                            <a>Produits</a>
+                            <div class="sub-menu">
+                                <div><a href="Produits/peripheriques.html">Périphériques</a></div>
+                                <div><a href="Produits/hardware.html">Hardware</a></div>
+                                <div><a href="Produits/logiciels.html">Logiciels</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="Nous Rejoindre/nousrejoindre.html">Nous rejoindre</a>
+                            <div class="sub-menu">
+                                <div><a href="Nous Rejoindre/vendeur.html">Vendeur</a></div>
+                                <div><a href="Nous Rejoindre/formateur.html">Formateur</a></div>
+                                <div><a href="Nous Rejoindre/developpeurweb.html">Developpeur Web</a></div>
+                            </div>
+                        </div>
+                        <div><a href="contact.html">Contact</a></div>
+                        <span></span>
+                        <div><a href="faq.html">FAQ</a></div>
+                        <div><a href="equipe.html">Équipe</a></div>
+                        <div><a href="presse.html">Presse</a></div>
+                    </div>
+                    <div class="milieu">
+                        <a class="recherche">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <input type="search" name="q" class="s" placeholder="Rechercher">
+                        <a href="https://twitter.com/?lang=fr" target="_blank" class="but">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://fr-fr.facebook.com/" target="_blank" class="but">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
-            ENTREZ ELEMENTS POUR PAGE FAQ.HTML
+            <span class="titre">FAQ</span>
+            <div>
+                <div class='titre'>
+                    Achat
+                </div>
+
+                <div class="content">
+                    <div>
+                        <input type="checkbox" id="question1" name="q"  class="questions">
+                        <div class="plus">+</div>
+                        <label for="question1" class="question">
+                            Où acheter nos articles ?
+                        </label>
+                        <div class="reponse">
+                            Vous pouvez acheter nos articles en magasin, présent partout en France !
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="question2" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question2" class="question">
+                            Est-ce vos articles que vous vendez ?
+                        </label>
+                        <div class="reponse">
+                            Non ! Les articles que l'on propose viennent de marque spécialiser, nous sommes simplement revendeur !
+                        </div>
+                    </div>
+              
+                    <div>
+                        <input type="checkbox" id="question3" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question3" class="question">
+                            Vous pouvez monter nos PC ?
+                        </label>
+                        <div class="reponse">
+                            Oui ! Vous retrouverez en boutique des spécialistes qui peuvent vous coneiller et monter votre PC.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class='titre'>
+                    Les magasins
+                </div>
+
+                <div class="content">
+                    <div>
+                        <input type="checkbox" id="question4" name="q"  class="questions">
+                        <div class="plus">+</div>
+                        <label for="question4" class="question">
+                            Où se trouve les magasins ?
+                        </label>
+                        <div class="reponse">
+                            Consulter la carte présente sur l'écran d'accueil pour trouver le magasin le plus proche de chez vous. 
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="question5" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question5" class="question">
+                            Quelle est la différence entre acheter sur internet et acheter en boutique ?
+                        </label>
+                        <div class="reponse">
+                            Dans nos magasin vous pouvez demander conseil à nos spécialiste qui vous répondront en suivant vos besoin et attentes partitculières.
+                        </div>
+                    </div>
+              
+                    <div>
+                        <input type="checkbox" id="question6" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question6" class="question">
+                            Quels sont les moyens de paiemement acceptés en boutique ?
+                        </label>
+                        <div class="reponse">
+                            Vous pouvez payer par carte, chèques ou espèce.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+        <footer>
+            <div>
+                <h2>Les sites partenaires</h2>
+                <div>
+                    <div><div><a>Material.net</a></div><img src="https://www.materiel.net/assets/dist/images/content/favicon.ico" alt="Logo Materiel.net"></div>
+                    <div><div><a>Razer</a></div><img src="https://www.razer.com/_ui/responsive/theme-blue/razer/images/favicon.ico" alt="Logo Razer"></div>
+                    <div><div><a>Roccat</a></div><img src="https://media.roccat.org/Favicon_a1047eab1035d58682a53557e0b2a75edbfd15fd_img~favicon_16_4.png" alt="Logo Roccat"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Suivez nous</h2>
+                <div>
+                    <div><div><a>@Octet-Market</a></div><i class="fab fa-instagram"></i></div>
+                    <div><div><a>Like notre page</a></div><i class="fab fa-facebook"></i></div>
+                    <div><div><a>#OctetMarket</a></div><i class="fab fa-twitter"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Contactez nous</h2>
+                <div>
+                    <div><div><a>07 81 86 62 87</a></div><i class="fas fa-phone-square-alt"></i></div>
+                    <div><div><a>Par E-mail</a></div><i class="far fa-envelope"></i></div>
+                    <div><div><a>Sur Linkedin</a></div><i class="fab fa-linkedin"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Copyright 2019</h2>
+                <div>
+                    <div><p>2011 Av. J-C. / 2021 © Tous droits réservés</p></div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

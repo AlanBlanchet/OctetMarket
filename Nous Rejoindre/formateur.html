@@ -1,19 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <base href="../">
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Octet-Market</title>
-        <link rel="stylesheet" type="text/css" href="header-style.css">
-        <link rel="stylesheet" type="text/css" href="pages-style.css">
         <link rel="shortcut icon" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="page-structure.css">
+        <link rel="stylesheet" type="text/css" href="pages-style.css">
+        <link rel="stylesheet" type="text/css" href="./Nous%20Rejoindre/metier.css">
         <script src="https://kit.fontawesome.com/29189c846f.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="header.js"></script>
+        <script type="text/javascript" src="burger.js"></script>
     </head>
     <body>
-        <div id="header-html"></div>
+        <header id="header-html">
+            <div id="header-1">
+                <a href="index.html">Octet Market</a>
+            </div>
+            <div class="nav-menu">
+                <button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>
+                <nav>
+                    <div class="menu-bar">
+                        <div><a href="index.html">Accueil</a></div>
+                        <div>
+                            <a>Produits</a>
+                            <div class="sub-menu">
+                                <div><a href="Produits/peripheriques.html">Périphériques</a></div>
+                                <div><a href="Produits/hardware.html">Hardware</a></div>
+                                <div><a href="Produits/logiciels.html">Logiciels</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="Nous Rejoindre/nousrejoindre.html">Nous rejoindre</a>
+                            <div class="sub-menu">
+                                <div><a href="Nous Rejoindre/vendeur.html">Vendeur</a></div>
+                                <div><a href="Nous Rejoindre/formateur.html">Formateur</a></div>
+                                <div><a href="Nous Rejoindre/developpeurweb.html">Developpeur Web</a></div>
+                            </div>
+                        </div>
+                        <div><a href="contact.html">Contact</a></div>
+                        <span></span>
+                        <div><a href="faq.html">FAQ</a></div>
+                        <div><a href="equipe.html">Équipe</a></div>
+                        <div><a href="presse.html">Presse</a></div>
+                    </div>
+                    <div class="milieu">
+                        <a class="recherche">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <input type="search" name="q" class="s" placeholder="Rechercher">
+                        <a href="https://twitter.com/?lang=fr" target="_blank" class="but">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://fr-fr.facebook.com/" target="_blank" class="but">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
-            ENTREZ ELEMENTS POUR PAGE FORMATEUR.HTML
+            <div class="poste">
+                <div class="entete">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p>Formateur h/f</p>
+                </div>
+                <div class="offre">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Bonjour, ici nous parlerons de formateur, en effet de nos jours l'informatique est certes 
+                        en pleine expansion, mais cependant le personnel actuel, qui est déjà formé n'est pas la 
+                        plus adapté à la technologie pour pouvoir adapté notre personnel, il nous faut donc des 
+                        formateurs. Si vous souhaitez devenir formateur en entreprise, il vous faudra alors les 
+                        qualités cités ci-dessous.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        Tout d'abord et le plus important, il faut avoir le sens de la pédagogie, pour être un bon 
+                        formateur, le sens de la pédagogie est essentiel. Cela dit, la transmission ne se suffit 
+                        pas à elle-même, et le formateur doit s’assurer de la bonne acquisition des enseignements 
+                        auprès des stagiaires. Apprenez à adapter votre discours et le rythme de vos formations en 
+                        fonction des réactions de votre public. Montrez-vous attentif au langage corporel et aux 
+                        expressions de vos apprenants. Plus vous adapterez votre cours pendant son déroulement, 
+                        plus vous faciliterez l’acquisition de connaissance chez votre public. Il vous faudra 
+                        connaitre votre audience, les qualités d’un formateur peuvent être reconnues par sa 
+                        capacité à connaître son audience, quelle que soit la formation enseignée. En effet, la 
+                        connaissance de son audience permet d’adapter et d’affiner son programme.
+                        Puis, pour rester à la page il ne faudra pas oublier de s'informer, c'est très récurrent 
+                        dans l'informatique, mais très important. Rares sont les formations qui peuvent rester 
+                        pertinentes plusieurs années sans être adaptées. Les règlementations peuvent changer d’une 
+                        année à l’autre. Les techniques évoluent, les publics changent, et les environnements de 
+                        travail se transforment. Ainsi, un bon formateur se doit de faire évoluer le contenu et les 
+                        supports de ses formations, et mettre à jour les nouvelles lois et règlementations à prendre 
+                        compte selon le sujet traité. La curation et la veille sont des puissants outils pour se tenir 
+                        informé de l'actualité, mais surtout pour mettre à jour ses compétences. Un bon formateur est 
+                        une personne capable de bien définir l'objectif de l'enseignement présenté. Etablir un programme 
+                        précis, différencier les objectifs et alterner entre exercices pratiques et théories font partie 
+                        des bases solides pour des outils pédagogiques efficaces. <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        Un point très important, le fait d'être disponible auprès de nos stagiaires. Si les formations 
+                        sont parfois courtes, la disponibilité auprès des stagiaires est essentielle. Que ce soit après 
+                        la journée de formation ou les quelques jours qui la suivent, un bon formateur ne laisse pas 
+                        ses stagiaires dans le flou, et sait répondre précisément à chaque question. Tant que possible, 
+                        sachez vous rendre disponible pour faire le point avec le client et le centre de formation, 
+                        sur les compétences acquises, les points à travailler. Il est important pour l’entreprise, 
+                        comme pour les stagiaires, d’avoir un bilan de la formation pour inscrire la progression dans 
+                        la durée. Et notamment auprès des stagiaires, il faut faire preuve de patience et 
+                        d'énthousiasme. Quel que soit le nombre de participants ou le sujet de la formation, le 
+                        formateur doit faire preuve d’enthousiasme et de motivation envers les stagiaires. 
+                        Le formateur doit aussi savoir se montrer patient envers les participants qui ne comprendraient 
+                        pas rapidement les enjeux ou les enseignements transmis durant la formation. Une difficulté 
+                        d’apprentissage sur un point précis est souvent le signe d’un problème au niveau des 
+                        pré-requis, ou d’une pédagogie qui reste à adapter à un public précis.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        Dans tous les cas, soyez positif vis-à-vis des apprenants et des stagiaires. Pour finir, être 
+                        formateur ne veut pas forcément dire former sans être formé. En effet, il existe de nombreuses 
+                        formations adaptées pour devenir formateur à son tour, afin d’avoir toutes les cartes en main 
+                        pour transmettre le savoir dans les meilleures conditions. Que ce soit pour de la formation 
+                        occasionnelle ou pour concevoir des supports professionnels, le choix ne manque pas.
+                    </p>
+                </div>
+            </div>
+            <a id="postule" href="contact.html"> Contactez nous </a>
         </main>
+        <footer>
+            <div>
+                <h2>Les sites partenaires</h2>
+                <div>
+                    <div><div><a>Material.net</a></div><img src="https://www.materiel.net/assets/dist/images/content/favicon.ico" alt="Logo Materiel.net"></div>
+                    <div><div><a>Razer</a></div><img src="https://www.razer.com/_ui/responsive/theme-blue/razer/images/favicon.ico" alt="Logo Razer"></div>
+                    <div><div><a>Roccat</a></div><img src="https://media.roccat.org/Favicon_a1047eab1035d58682a53557e0b2a75edbfd15fd_img~favicon_16_4.png" alt="Logo Roccat"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Suivez nous</h2>
+                <div>
+                    <div><div><a>@Octet-Market</a></div><i class="fab fa-instagram"></i></div>
+                    <div><div><a>Like notre page</a></div><i class="fab fa-facebook"></i></div>
+                    <div><div><a>#OctetMarket</a></div><i class="fab fa-twitter"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Contactez nous</h2>
+                <div>
+                    <div><div><a>07 81 86 62 87</a></div><i class="fas fa-phone-square-alt"></i></div>
+                    <div><div><a>Par E-mail</a></div><i class="far fa-envelope"></i></div>
+                    <div><div><a>Sur Linkedin</a></div><i class="fab fa-linkedin"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Copyright 2019</h2>
+                <div>
+                    <div><p>2011 Av. J-C. / 2021 © Tous droits réservés</p></div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

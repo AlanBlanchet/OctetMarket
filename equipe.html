@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Octet-Market</title>
-        <link rel="stylesheet" type="text/css" href="header-style.css">
+        <link rel="shortcut icon" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="page-structure.css">
         <link rel="stylesheet" type="text/css" href="pages-style.css">
         <link rel="stylesheet" type="text/css" href="equipe.css">
-        <link rel="shortcut icon" href="icon.png">
         <script src="https://kit.fontawesome.com/29189c846f.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="header.js"></script>
+        <script type="text/javascript" src="burger.js"></script>
     </head>
     <body>
-        <div id="header-html"></div>
+        <header id="header-html">
+            <div id="header-1">
+                <a href="index.html">Octet Market</a>
+            </div>
+            <div class="nav-menu">
+                <button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>
+                <nav>
+                    <div class="menu-bar">
+                        <div><a href="index.html">Accueil</a></div>
+                        <div>
+                            <a>Produits</a>
+                            <div class="sub-menu">
+                                <div><a href="Produits/peripheriques.html">Périphériques</a></div>
+                                <div><a href="Produits/hardware.html">Hardware</a></div>
+                                <div><a href="Produits/logiciels.html">Logiciels</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="Nous Rejoindre/nousrejoindre.html">Nous rejoindre</a>
+                            <div class="sub-menu">
+                                <div><a href="Nous Rejoindre/vendeur.html">Vendeur</a></div>
+                                <div><a href="Nous Rejoindre/formateur.html">Formateur</a></div>
+                                <div><a href="Nous Rejoindre/developpeurweb.html">Developpeur Web</a></div>
+                            </div>
+                        </div>
+                        <div><a href="contact.html">Contact</a></div>
+                        <span></span>
+                        <div><a href="faq.html">FAQ</a></div>
+                        <div><a href="equipe.html">Équipe</a></div>
+                        <div><a href="presse.html">Presse</a></div>
+                    </div>
+                    <div class="milieu">
+                        <a class="recherche">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <input type="search" name="q" class="s" placeholder="Rechercher">
+                        <a href="https://twitter.com/?lang=fr" target="_blank" class="but">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://fr-fr.facebook.com/" target="_blank" class="but">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
             <div class="equipe-structure">
                 <div class="equipe-container">
                     <div>
                         <div>
-                            <img src="Images/Bastien.jpg" alt="Bastien">   
+                            <img src="Images/Equipe/Bastien.jpg" alt="Bastien">   
                         </div>
                         <div class="nom-metier">
                             <h2>Chef De Projet</h2>
@@ -30,7 +75,11 @@
                     </div>
                     <div>
                         <h4>
-                            Bastien est le concepteur même du projet, c'est lui qui l'a imaginé et mis en œuvre, c'est littéralement le moteur du groupe. C'est donc naturellement qu'il est devenu le chef d'orchestre du projet. Bastien est à la fois compétent et beau, il est pour nous un guide autant spirituel que physique, il nous inspire l'intelligence et nous partage ses compétences (c'est en quelque sorte un génie).
+                            Bastien est le concepteur même du projet, c'est lui qui l'a imaginé et mis en œuvre, 
+                            c'est littéralement le moteur du groupe. C'est donc naturellement qu'il est devenu le 
+                            chef d'orchestre du projet. Bastien est à la fois compétent et beau, il est pour nous 
+                            un guide autant spirituel que physique, il nous inspire l'intelligence et nous partage 
+                            ses compétences (c'est en quelque sorte un génie).
                         </h4>
                     </div>
                 </div>
@@ -39,7 +88,7 @@
                 <div class="equipe-container">
                     <div>
                         <div>
-                            <img src="Images/alexis.jpg" alt="Alexis">   
+                            <img src="Images/Equipe/alexis.jpg" alt="Alexis">   
                         </div>
                         <div class="nom-metier">
                             <h2>Architecte technique</h2>
@@ -52,8 +101,11 @@
                     </div>
                     <div>
                         <h4>
-                            Alexis c'est le petit nouveau, il a rejoint l'équipe il y a peu, c'est le poulain. On place tous nos espoirs en lui parce que c'est un crack. C'est un peu comme les
-                            voitures électriques, Bastien est notre Chevrolet et Alexis notre Tesla. On dirait pas comme ça, mais il est super rapide ce garçon, une boule d'énergie ! Et en plus de tout ça, c'est un petit rigolo... Dingue toutes ces qualités !
+                            Alexis c'est le petit nouveau, il a rejoint l'équipe il y a peu, c'est le poulain. On 
+                            place tous nos espoirs en lui parce que c'est un crack. C'est un peu comme les
+                            voitures électriques, Bastien est notre Chevrolet et Alexis notre Tesla. On dirait pas 
+                            comme ça, mais il est super rapide ce garçon, une boule d'énergie ! Et en plus de tout 
+                            ça, c'est un petit rigolo... Dingue toutes ces qualités !
                         </h4>
                     </div>
                 </div>                
@@ -62,7 +114,7 @@
                 <div class="equipe-container">
                     <div>
                         <div>
-                            <img src="Images/alan.jpg" alt="Alan">   
+                            <img src="Images/Equipe/alan.jpg" alt="Alan">   
                         </div>
                         <div class="nom-metier">
                             <h2>Ingénieur système</h2>
@@ -75,7 +127,12 @@
                     </div>
                     <div>
                         <h4>
-                            Malgré son âge, c'est probablement le plus vigoureux de l'équipe, une force de la nature qui tient les savoirs de son époque mais également ceux de la notre. C'est en quelque sorte le sage de l'informatique. Il est aussi cultivé que Socrate et aussi malin que Loki. Une vraie vipère, il peut repérer les erreurs de ton code à des killomètres, et connais toutes les arcanes du code, autant dans le javascript que dans le C#. (Cependant, il a un problème avec les return dans les boucles for... Et les légumes...)
+                            Malgré son âge, c'est probablement le plus vigoureux de l'équipe, une force de la 
+                            nature qui tient les savoirs de son époque mais également ceux de la notre. C'est en 
+                            quelque sorte le sage de l'informatique. Il est aussi cultivé que Socrate et aussi malin 
+                            que Loki. Une vraie vipère, il peut repérer les erreurs de ton code à des killomètres, et 
+                            connais toutes les arcanes du code, autant dans le javascript que dans le C#. (Cependant, 
+                            il a un problème avec les return dans les boucles for... Et les légumes...)
                         </h4>
                     </div>
                 </div>
@@ -84,10 +141,10 @@
                 <div class="equipe-container">
                     <div>
                         <div>
-                            <img src="Images/jules.jpg" alt="Jules">   
+                            <img src="Images/Equipe/jules.jpg" alt="Jules">   
                         </div>
                         <div class="nom-metier">
-                            <h2>Assistant Chômeur</h2>
+                            <h2>Stagiaire</h2>
                         </div>
                         <div>
                             <h1>JULES-ARTHUR LAUX</h1>
@@ -97,11 +154,45 @@
                     </div>
                     <div>
                         <h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quia magni cupiditate at accusamus cumque quaerat! Dicta id odit quae pariatur incidunt nulla, cumque iusto provident sunt magni, architecto voluptatum.
+                            Toujours là pour découper les images c'est un peu le stagiaire à la photocopieuse mais 
+                            version informatique. C'est peut-être pas le plus fort, c'est même peut-être le pire, 
+                            mais il donnera tout ! La raison de sa présence ? Il fallait être 4 dans l'équipe...
                         </h4>
                     </div>
                 </div>
             </div>
         </main>
+        <footer>
+            <div>
+                <h2>Les sites partenaires</h2>
+                <div>
+                    <div><div><a>Material.net</a></div><img src="https://www.materiel.net/assets/dist/images/content/favicon.ico" alt="Logo Materiel.net"></div>
+                    <div><div><a>Razer</a></div><img src="https://www.razer.com/_ui/responsive/theme-blue/razer/images/favicon.ico" alt="Logo Razer"></div>
+                    <div><div><a>Roccat</a></div><img src="https://media.roccat.org/Favicon_a1047eab1035d58682a53557e0b2a75edbfd15fd_img~favicon_16_4.png" alt="Logo Roccat"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Suivez nous</h2>
+                <div>
+                    <div><div><a>@Octet-Market</a></div><i class="fab fa-instagram"></i></div>
+                    <div><div><a>Like notre page</a></div><i class="fab fa-facebook"></i></div>
+                    <div><div><a>#OctetMarket</a></div><i class="fab fa-twitter"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Contactez nous</h2>
+                <div>
+                    <div><div><a>07 81 86 62 87</a></div><i class="fas fa-phone-square-alt"></i></div>
+                    <div><div><a>Par E-mail</a></div><i class="far fa-envelope"></i></div>
+                    <div><div><a>Sur Linkedin</a></div><i class="fab fa-linkedin"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Copyright 2019</h2>
+                <div>
+                    <div><p>2011 Av. J-C. / 2021 © Tous droits réservés</p></div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

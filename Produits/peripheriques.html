@@ -1,19 +1,326 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <base href="../">
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Octet-Market</title>
-        <link rel="stylesheet" type="text/css" href="header-style.css">
-        <link rel="stylesheet" type="text/css" href="pages-style.css">
         <link rel="shortcut icon" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="page-structure.css">
+        <link rel="stylesheet" type="text/css" href="pages-style.css">
+        <link rel="stylesheet" type="text/css" href="Produits/produits-style.css">
         <script src="https://kit.fontawesome.com/29189c846f.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="header.js"></script>
+        <script type="text/javascript" src="burger.js"></script>
     </head>
     <body>
-        <div id="header-html"></div>
+        <header id="header-html">
+            <div id="header-1">
+                <a href="index.html">Octet Market</a>
+            </div>
+            <div class="nav-menu">
+                <button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>
+                <nav>
+                    <div class="menu-bar">
+                        <div><a href="index.html">Accueil</a></div>
+                        <div>
+                            <a href="Produits/produits.html">Produits</a>
+                            <div class="sub-menu">
+                                <div><a href="Produits/peripheriques.html">Périphériques</a></div>
+                                <div><a href="Produits/hardware.html">Hardware</a></div>
+                                <div><a href="Produits/logiciels.html">Logiciels</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="Nous Rejoindre/nousrejoindre.html">Nous rejoindre</a>
+                            <div class="sub-menu">
+                                <div><a href="Nous Rejoindre/vendeur.html">Vendeur</a></div>
+                                <div><a href="Nous Rejoindre/formateur.html">Formateur</a></div>
+                                <div><a href="Nous Rejoindre/developpeurweb.html">Developpeur Web</a></div>
+                            </div>
+                        </div>
+                        <div><a href="contact.html">Contact</a></div>
+                        <span></span>
+                        <div><a href="faq.html">FAQ</a></div>
+                        <div><a href="equipe.html">Équipe</a></div>
+                        <div><a href="presse.html">Presse</a></div>
+                    </div>
+                    <div class="milieu">
+                        <a class="recherche">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <input type="search" name="q" class="s" placeholder="Rechercher">
+                        <a href="https://twitter.com/?lang=fr" target="_blank" class="but">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://fr-fr.facebook.com/" target="_blank" class="but">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
-            ENTREZ ELEMENTS POUR PAGE PERIPHERIQUES.HTML
+            <div class="selection-produits">
+                <h1>Rechercher</h1>
+                <div class="categorie-recherche">
+                    <h2>Prix</h2>
+                    <ul>
+                        <li><label for="prix1">&lt 10 €</label><input type="radio" name="prix" id="prix1"></li>
+                        <li><label for="prix2">&lt 100 €</label><input type="radio" name="prix" id="prix2"></li>
+                        <li><label for="prix3">&lt 200 €</label><input type="radio" name="prix" id="prix3"></li>
+                        <li><label for="prix4">&lt 300 €</label><input type="radio" name="prix" id="prix4"></li>
+                        <li><label for="prix5">&lt 500 €</label><input type="radio" name="prix" id="prix5"></li>
+                        <li><label for="prix6">&lt 1000 €</label><input type="radio" name="prix" id="prix6"></li>
+                        <li><label for="prix7">&lt 5000 €</label><input type="radio" name="prix" id="prix7"></li>
+                        <li><label for="prixPerso">Personnaliser</label><input type="radio" name="prix" id="prixPerso"></li>
+                        <div><label>0</label><input type="range" min="0" max="10000" value="100" id="prixIn" oninput="document.getElementById('prixOut').innerHTML = '&lt '+this.value+' €'"><label>10000 €</label></div>
+                        <div><output id="prixOut">&lt 100 €</output></div>
+                    </ul>
+                </div>
+                <div class="categorie-recherche">
+                    <h2>Marque</h2>
+                    <ul>
+                        <li><label for="marque1">Aple</label><input type="checkbox" name="marque" id="marque1"></li>
+                        <li><label for="marque2">HPP</label><input type="checkbox" name="marque" id="marque2"></li>
+                        <li><label for="marque3">Logtech</label><input type="checkbox" name="marque" id="marque3"></li>
+                        <li><label for="marque4">Logtech</label><input type="checkbox" name="marque" id="marque4"></li>
+                        <li><label for="marque5">Microhard</label><input type="checkbox" name="marque" id="marque5"></li>
+                        <li><label for="marque6">Rasoir</label><input type="checkbox" name="marque" id="marque6"></li>
+                    </ul>
+                </div>
+                <div class="categorie-recherche">
+                    <h2>Note</h2>
+                    <ul>
+                        <li><label for="note1">&gt 1 étoile</label><input type="checkbox" name="note" id="note1"></li>
+                        <li><label for="note2">&gt 2 étoiles</label><input type="checkbox" name="note" id="note2"></li>
+                        <li><label for="note3">&gt 3 étoiles</label><input type="checkbox" name="note" id="note3"></li>
+                        <li><label for="note4">&gt 4 étoiles</label><input type="checkbox" name="note" id="note4"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="produits">
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>25 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/clavier1.png" alt="Image Glab Keyz Iridium">
+                        <div id="infos">
+                            <p>Clavier Membrane</p>
+                            <p>6 Touches Macros</p>
+                            <p>Led RGB</p>
+                            <p>The GLab</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>The GLab Keyz Iridium</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>75 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/clavier2.png" alt="Image Logitech G413">
+                        <div id="infos">
+                            <p>Clavier Mécanique</p>
+                            <p>Switch Power-G</p>
+                            <p>Touches rétroélairées</p>
+                            <p>Logitech</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Logitech G413</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>140 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/clavier3.png" alt="Image Corsair K68 RGB">
+                        <div id="infos">
+                            <p>Clavier Mécanique</p>
+                            <p>Switch Cherry-MX</p>
+                            <p>Touches RGB</p>
+                            <p>Corsair</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Corsair K68 RGB</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>20 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/clavier4.png" alt="Image Empire Gamin K300">
+                        <div id="infos">
+                            <p>Clavier Semi-Mécanique</p>
+                            <p>Touches Multimédias</p>
+                            <p>Touches RGB</p>
+                            <p>Empire Gaming</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Empire Gaming K300</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>60 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/casque1.png" alt="Image casque1">
+                        <div id="infos">
+                            <p>Casque micro</p>
+                            <p>Son stéréo</p>
+                            <p>Led Bleu</p>
+                            <p>SOG</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Spirit Of Gamer XPERT-H500</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>75 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/casque2.png" alt="Image casque2">
+                        <div id="infos">
+                            <p>Casque mirco</p>
+                            <p>Son stéréo</p>
+                            <p>Led Verte</p>
+                            <p>Razer</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Razer Kraken</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>140 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/casque3.png" alt="Image casque3">
+                        <div id="infos">
+                            <p>Casque micro</p>
+                            <p>Son 3D Surround</p>
+                            <p>Excellent Micro</p>
+                            <p>Audeze</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Audeze Mobius</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>239 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/souris1.png" alt="Image souris1">
+                        <div id="infos">
+                            <p>Viens avec sa housse</p>
+                            <p>Boutons programmables</p>
+                            <p>Led RGB</p>
+                            <p>Swiftpoint</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Swiftpoint Z Mouse</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>30 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/souris2.png" alt="Image souris2">
+                        <div id="infos">
+                            <p>Souris filaire</p>
+                            <p>2 Boutons programmables</p>
+                            <p>Led Bleu</p>
+                            <p>Acer</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Acer predator</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>30 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Périphériques/souris3.png" alt="Image souris3">
+                        <div id="infos">
+                            <p>Peu chere</p>
+                            <p>2 Boutons en plus</p>
+                            <p>Les rouge</p>
+                            <p>E-BLUE</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>E-BLUE 6D</p>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </main>
-    </body>
+        <footer>
+            <div>
+                <h2>Les sites partenaires</h2>
+                <div>
+                    <div><div><a>Material.net</a></div><img src="https://www.materiel.net/assets/dist/images/content/favicon.ico" alt="Logo Materiel.net"></div>
+                    <div><div><a>Razer</a></div><img src="https://www.razer.com/_ui/responsive/theme-blue/razer/images/favicon.ico" alt="Logo Razer"></div>
+                    <div><div><a>Roccat</a></div><img src="https://media.roccat.org/Favicon_a1047eab1035d58682a53557e0b2a75edbfd15fd_img~favicon_16_4.png" alt="Logo Roccat"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Suivez nous</h2>
+                <div>
+                    <div><div><a>@Octet-Market</a></div><i class="fab fa-instagram"></i></div>
+                    <div><div><a>Like notre page</a></div><i class="fab fa-facebook"></i></div>
+                    <div><div><a>#OctetMarket</a></div><i class="fab fa-twitter"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Contactez nous</h2>
+                <div>
+                    <div><div><a>07 81 86 62 87</a></div><i class="fas fa-phone-square-alt"></i></div>
+                    <div><div><a>Par E-mail</a></div><i class="far fa-envelope"></i></div>
+                    <div><div><a>Sur Linkedin</a></div><i class="fab fa-linkedin"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Copyright 2019</h2>
+                <div>
+                    <div><p>2011 Av. J-C. / 2021 © Tous droits réservés</p></div>
+                </div>
+            </div>
+        </footer>
+    </body >
 </html>

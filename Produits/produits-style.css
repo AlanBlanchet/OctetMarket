@@ -1,0 +1,248 @@
+:root{
+    --main-color:#2980b9;
+	--secondary-color: #34495e;
+	--third-color:#70a1ff;
+	--fourth-color:#002e6e;
+	--border-default:white;
+	--text-default:white;
+	--text-select:#bdc3c7;
+	--background-color:rgb(30,30,30);
+	--overlay-dark:rgba(50,100,150,0.95);
+}
+
+main{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.selection-produits{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    min-width: 200px;
+    height:100%;
+	padding:15px;
+	margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-right:1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 4px;
+}
+
+.selection-produits > h1{
+    text-align: center;
+}
+
+.categorie-recherche{
+    padding:20px;
+    margin: 10px 0px;
+    border-right: 4px solid var(--main-color);
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 4px;
+}
+
+.categorie-recherche > ul{
+    list-style-type: none;
+    padding-left: 10px;
+    width:90%;
+}
+
+.categorie-recherche > ul > li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.categorie-recherche > ul > li *{
+    cursor: inherit;
+}
+
+.categorie-recherche > ul > li > label{
+    flex-grow: 1;
+    padding:5px;
+}
+
+.categorie-recherche.categorie-recherche > ul > li:hover{
+    background-color: rgba(255,255,255,0.4);
+}
+
+.categorie-recherche > ul > li:nth-child(2n){
+    background-color: rgba(0,0,0,0.3);
+}
+
+.categorie-recherche > ul > li:nth-child(2n+1){
+    background-color: rgba(0,0,0,0.1);
+}
+
+.categorie-recherche > ul > div{
+    display: flex;
+    align-items: center;
+}
+
+.categorie-recherche > ul > div > input[type=range]{
+    flex-grow: 1;
+    width:100%;
+}
+
+.categorie-recherche > ul > div > label{
+    padding: 10px;
+}
+
+.categorie-recherche > ul > div:last-child > output{
+    width:100%;
+    text-align: center;
+}
+
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    height: min-content;
+}
+
+.cartep{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(0,0,0,0.5);
+	flex-grow:1;
+	margin: 20px;
+	flex-direction: column;
+    width:400px;
+    height: fit-content;
+	border-radius: 5px;
+	border-top: 5px solid var(--main-color);
+	transition: 0.5s;
+	cursor : default;
+}
+
+.cartep>div:first-child {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:black;
+	padding: 0 10px;
+	margin : 10px;
+	max-width: calc(100% - 40px);
+	max-height: calc(100% - 40px);
+	top : 0;
+	overflow: hidden;
+}
+
+.cartep>div:first-child>div:first-child>p{
+	padding: 5px;
+	margin: 10px 5px;
+	text-align: center;
+	line-height: 50%;
+	box-sizing: border-box;
+	font-size: 150%;
+	z-index:50;
+	position:absolute;
+	left:0px;
+	top:0px;
+	cursor:default;
+}
+
+.cartep>div:first-child>div>div {
+	position:absolute;
+	left:-50%;
+	top:-50%;
+	height: 150px;
+	width: 150px;
+	background-color: var(--main-color);
+	transform : rotate(45deg);
+	z-index: 1;
+}
+
+.cartep>div:first-child>div{
+	overflow:hidden;
+	width:150px;
+	height:150px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.cartep>div>p {
+    width:100%;
+    padding:5px;
+    margin:0px;
+	text-align: center;
+	line-height: 50%;
+	z-index: 10;
+	font-size: 1.3em;
+}
+
+.cartep>div:last-child {
+	position: relative;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+    background-color: var(--main-color);
+    height:80px;
+	margin: 10px;
+	border-radius: 6px;
+}
+
+.cartep:hover{
+	border-top: 5px solid var(--fourth-color);
+}
+
+.cartep:hover > div>img{
+	transition: 0.5s ;
+	transform: scale(1.1);
+
+}
+
+.cartep> div>img{
+	transition: 0.5s;
+	transform: scale(1);
+}
+
+.cartep:hover>div:last-child>div{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	animation: 0.5s 1 ease hover-slider-container;
+	animation-fill-mode: forwards;
+	background-color: var(--fourth-color);
+	transition: 0.3s;
+	border-radius: 6px;
+}
+
+#infos {
+	height: 100%;
+	width: calc(100% - 150px);
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	left:100%;
+	transition: 0.5s;
+	line-height: 100%;
+}
+
+#infos>p {
+	line-height: 100%;
+	text-align: right;
+	padding-right: 10%;
+	font-size: 125%;
+}
+
+.cartep:hover #infos {
+	left:150px;
+	transition: 0.5s;
+	background-color: rgba(0,0,0,0.9);
+}
+
+@media(max-width: 992px)
+{
+	.selection-produits{
+		display: none;
+	}
+
+	.cartep{
+		width:320px;
+	}
+}

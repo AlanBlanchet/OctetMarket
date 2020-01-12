@@ -1,19 +1,339 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <base href="../">
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Octet-Market</title>
-        <link rel="stylesheet" type="text/css" href="header-style.css">
-        <link rel="stylesheet" type="text/css" href="pages-style.css">
         <link rel="shortcut icon" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="page-structure.css">
+        <link rel="stylesheet" type="text/css" href="pages-style.css">
+        <link rel="stylesheet" type="text/css" href="Produits/produits-style.css">
         <script src="https://kit.fontawesome.com/29189c846f.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="header.js"></script>
+        <script type="text/javascript" src="burger.js"></script>
     </head>
     <body>
-        <div id="header-html"></div>
+        <header id="header-html">
+            <div id="header-1">
+                <a href="index.html">Octet Market</a>
+            </div>
+            <div class="nav-menu">
+                <button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>
+                <nav>
+                    <div class="menu-bar">
+                        <div><a href="index.html">Accueil</a></div>
+                        <div>
+                            <a href="Produits/produits.html">Produits</a>
+                            <div class="sub-menu">
+                                <div><a href="Produits/peripheriques.html">Périphériques</a></div>
+                                <div><a href="Produits/hardware.html">Hardware</a></div>
+                                <div><a href="Produits/logiciels.html">Logiciels</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="Nous Rejoindre/nousrejoindre.html">Nous rejoindre</a>
+                            <div class="sub-menu">
+                                <div><a href="Nous Rejoindre/vendeur.html">Vendeur</a></div>
+                                <div><a href="Nous Rejoindre/formateur.html">Formateur</a></div>
+                                <div><a href="Nous Rejoindre/developpeurweb.html">Developpeur Web</a></div>
+                            </div>
+                        </div>
+                        <div><a href="contact.html">Contact</a></div>
+                        <span></span>
+                        <div><a href="faq.html">FAQ</a></div>
+                        <div><a href="equipe.html">Équipe</a></div>
+                        <div><a href="presse.html">Presse</a></div>
+                    </div>
+                    <div class="milieu">
+                        <a class="recherche">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <input type="search" name="q" class="s" placeholder="Rechercher">
+                        <a href="https://twitter.com/?lang=fr" target="_blank" class="but">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://fr-fr.facebook.com/" target="_blank" class="but">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
-            ENTREZ ELEMENTS POUR PAGE HARDWARE.HTML
+            <div class="selection-produits">
+                <h1>Rechercher</h1>
+                <div class="categorie-recherche">
+                    <h2>Prix</h2>
+                    <ul>
+                        <li><label for="prix1">&lt 10 €</label><input type="radio" name="prix" id="prix1"></li>
+                        <li><label for="prix2">&lt 100 €</label><input type="radio" name="prix" id="prix2"></li>
+                        <li><label for="prix3">&lt 200 €</label><input type="radio" name="prix" id="prix3"></li>
+                        <li><label for="prix4">&lt 300 €</label><input type="radio" name="prix" id="prix4"></li>
+                        <li><label for="prix5">&lt 500 €</label><input type="radio" name="prix" id="prix5"></li>
+                        <li><label for="prix6">&lt 1000 €</label><input type="radio" name="prix" id="prix6"></li>
+                        <li><label for="prix7">&lt 5000 €</label><input type="radio" name="prix" id="prix7"></li>
+                        <li><label for="prixPerso">Personnaliser</label><input type="radio" name="prix" id="prixPerso"></li>
+                        <div><label>0</label><input type="range" min="0" max="10000" value="100" id="prixIn" oninput="document.getElementById('prixOut').innerHTML = '&lt '+this.value+' €'"><label>10000 €</label></div>
+                        <div><output id="prixOut">&lt 100 €</output></div>
+                    </ul>
+                </div>
+                <div class="categorie-recherche">
+                    <h2>Marques</h2>
+                    <ul>
+                        <li><label for="marque1">MVidia</label><input type="checkbox" name="marque" id="marque1"></li>
+                        <li><label for="marque2">Assus</label><input type="checkbox" name="marque" id="marque2"></li>
+                        <li><label for="marque3">MS13</label><input type="checkbox" name="marque" id="marque3"></li>
+                        <li><label for="marque4">Pirate</label><input type="checkbox" name="marque" id="marque4"></li>
+                        <li><label for="marque5">Samsing</label><input type="checkbox" name="marque" id="marque5"></li>
+                        <li><label for="marque6">PNZ</label><input type="checkbox" name="marque" id="marque6"></li>
+                        <li><label for="marque7">LoveTech</label><input type="checkbox" name="marque" id="marque7"></li>
+                        <li><label for="marque8">Queenstone</label><input type="checkbox" name="marque" id="marque8"></li>
+                    </ul>
+                </div>
+                <div class="categorie-recherche">
+                    <h2>Note</h2>
+                    <ul>
+                        <li><label for="note1">&gt 1 étoile</label><input type="checkbox" name="note" id="note1"></li>
+                        <li><label for="note2">&gt 2 étoiles</label><input type="checkbox" name="note" id="note2"></li>
+                        <li><label for="note3">&gt 3 étoiles</label><input type="checkbox" name="note" id="note3"></li>
+                        <li><label for="note4">&gt 4 étoiles</label><input type="checkbox" name="note" id="note4"></li>
+                    </ul>
+                </div>
+                <div class="categorie-recherche">
+                    <h2>Stockage</h2>
+                    <ul>
+                        <li><label for="stockage1">1Go</label><input type="checkbox" name="stockage" id="stockage1"></li>
+                        <li><label for="stockage2">2Go</label><input type="checkbox" name="stockage" id="stockage2"></li>
+                        <li><label for="stockage3">256Go</label><input type="checkbox" name="stockage" id="stockage3"></li>
+                        <li><label for="stockage4">512Go</label><input type="checkbox" name="stockage" id="stockage4"></li>
+                        <li><label for="stockage5">1To</label><input type="checkbox" name="stockage" id="stockage5"></li>
+                        <li><label for="stockage6">2To</label><input type="checkbox" name="stockage" id="stockage6"></li>
+                        <li><label for="stockage7">3To</label><input type="checkbox" name="stockage" id="stockage7"></li>
+                        <li><label for="stockage8">4To</label><input type="checkbox" name="stockage" id="stockage8"></li>
+                        <li><label for="stockage9">5To</label><input type="checkbox" name="stockage" id="stockage9"></li>
+                        <li><label for="stockage10">6To</label><input type="checkbox" name="stockage" id="stockage10"></li>
+                        <li><label for="stockage11">8To</label><input type="checkbox" name="stockage" id="stockage11"></li>
+                        <li><label for="stockage12">+&infin;To</label><input type="checkbox" name="stockage" id="stockage12"></li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="produits">
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>319 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/cg.png" alt="Image MSI GTX 1060">
+                        <div id="infos">
+                            <p>Hautes performances</p>
+                            <p>2 Ventilateurs</p>
+                            <p>MSI</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>MSI GTX 1060</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>1100 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/cg2.png" alt="Image RTX 2080Ti">
+                        <div id="infos">
+                            <p>Ultra hautes performances</p>
+                            <p>RTX On</p>
+                            <p>Les Intégrés</p>
+                            <p>NVidia</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>NVidia RTX 2080Ti</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>560 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/cg3.png" alt="Image GTX 960Ti">
+                        <div id="infos">
+                            <p>Bonne performances</p>
+                            <p>3 Ventilateurs</p>
+                            <p>Led RGB</p>
+                            <p>Asus</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Asus GTX 960Ti</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>150 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/cg4.png" alt="Image Radeon HD7970">
+                        <div id="infos">
+                            <p>Silencieuse</p>
+                            <p>Compatible DirectX11</p>
+                            <p>AMD</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>AMD Radeon HD 5970</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>100 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/ssd1.png" alt="Image ssd1">
+                        <div id="infos">
+                            <p>1 TO de stockage</p>
+                            <p>SSD</p>
+                            <p>Vertex</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Vertex 2</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>70 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/ssd2.png" alt="Image ssd2">
+                        <div id="infos">
+                            <p>480 Go de Stockage</p>
+                            <p>SSD</p>
+                            <p>EMTEC</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>EMTEC</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>40 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/ssd3.png" alt="Image ssd3">
+                        <div id="infos">
+                            <p>64 Go de stockage</p>
+                            <p>SSD</p>
+                            <p>Samsung</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Samsung</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>239 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/ssd4.png" alt="Image ssd4">
+                        <div id="infos">
+                            <p>SSD</p>
+                            <p>240 Go de Stockage</p>
+                            <p>PNY</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>PNY CS900</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>218 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/ram4.png" alt="Image RAM">
+                        <div id="infos">
+                            <p>DDR4 3200MHz</p>
+                            <p>LED RGB</p>
+                            <p>32 Go (2x16Go)</p>
+                            <p>Corsair</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Corsair Dominator Platinum</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cartep">
+                    <div>
+                        <div>
+                            <p>159 €</p>
+                            <div></div>
+                        </div>
+                        <img src="Images/Produits/Hardware/mb5.png" alt="Image Carte mère">
+                        <div id="infos">
+                            <p>Chipset B365</p>
+                            <p>Faite pour le Gaming</p>
+                            <p>LED RGB</p>
+                            <p>ASUS ROG</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>ROG STRIX B365-F GAMING</p>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </main>
-    </body>
+        <footer>
+            <div>
+                <h2>Les sites partenaires</h2>
+                <div>
+                    <div><div><a>Material.net</a></div><img src="https://www.materiel.net/assets/dist/images/content/favicon.ico" alt="Logo Materiel.net"></div>
+                    <div><div><a>Razer</a></div><img src="https://www.razer.com/_ui/responsive/theme-blue/razer/images/favicon.ico" alt="Logo Razer"></div>
+                    <div><div><a>Roccat</a></div><img src="https://media.roccat.org/Favicon_a1047eab1035d58682a53557e0b2a75edbfd15fd_img~favicon_16_4.png" alt="Logo Roccat"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Suivez nous</h2>
+                <div>
+                    <div><div><a>@Octet-Market</a></div><i class="fab fa-instagram"></i></div>
+                    <div><div><a>Like notre page</a></div><i class="fab fa-facebook"></i></div>
+                    <div><div><a>#OctetMarket</a></div><i class="fab fa-twitter"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Contactez nous</h2>
+                <div>
+                    <div><div><a>07 81 86 62 87</a></div><i class="fas fa-phone-square-alt"></i></div>
+                    <div><div><a>Par E-mail</a></div><i class="far fa-envelope"></i></div>
+                    <div><div><a>Sur Linkedin</a></div><i class="fab fa-linkedin"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Copyright 2019</h2>
+                <div>
+                    <div><p>2011 Av. J-C. / 2021 © Tous droits réservés</p></div>
+                </div>
+            </div>
+        </footer>
+    </body >
 </html>

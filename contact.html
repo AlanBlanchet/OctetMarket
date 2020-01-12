@@ -1,18 +1,194 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Octet-Market</title>
-        <link rel="stylesheet" type="text/css" href="header-style.css">
-        <link rel="stylesheet" type="text/css" href="pages-style.css">
         <link rel="shortcut icon" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="page-structure.css">
+        <link rel="stylesheet" type="text/css" href="pages-style.css">
+        <link rel="stylesheet" href="contact.css">
         <script src="https://kit.fontawesome.com/29189c846f.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="header.js"></script>
+        <script type="text/javascript" src="burger.js"></script>
     </head>
     <body>
-        <div id="header-html"></div>
+        <header id="header-html">
+            <div id="header-1">
+                <a href="index.html">Octet Market</a>
+            </div>
+            <div class="nav-menu">
+                <button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>
+                <nav>
+                    <div class="menu-bar">
+                        <div><a href="index.html">Accueil</a></div>
+                        <div>
+                            <a>Produits</a>
+                            <div class="sub-menu">
+                                <div><a href="Produits/peripheriques.html">Périphériques</a></div>
+                                <div><a href="Produits/hardware.html">Hardware</a></div>
+                                <div><a href="Produits/logiciels.html">Logiciels</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="Nous Rejoindre/nousrejoindre.html">Nous rejoindre</a>
+                            <div class="sub-menu">
+                                <div><a href="Nous Rejoindre/vendeur.html">Vendeur</a></div>
+                                <div><a href="Nous Rejoindre/formateur.html">Formateur</a></div>
+                                <div><a href="Nous Rejoindre/developpeurweb.html">Developpeur Web</a></div>
+                            </div>
+                        </div>
+                        <div><a href="contact.html">Contact</a></div>
+                        <span></span>
+                        <div><a href="faq.html">FAQ</a></div>
+                        <div><a href="equipe.html">Équipe</a></div>
+                        <div><a href="presse.html">Presse</a></div>
+                    </div>
+                    <div class="milieu">
+                        <a class="recherche">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <input type="search" name="q" class="s" placeholder="Rechercher">
+                        <a href="https://twitter.com/?lang=fr" target="_blank" class="but">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://fr-fr.facebook.com/" target="_blank" class="but">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
-            ENTREZ ELEMENTS POUR PAGE CONTACT.HTML
+            <h1>Contactez nous</h1>
+            <form action="" method="post">
+                <div>
+                    <label for="surname">Nom</label>
+                    <div class="validity">
+                        <input id="surname" name="uname" type="text" required placeholder="Votre Nom">
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="firstname">Prénom</label>
+                    <div class="validity">
+                        <input id="firstname" name="firstname" type="text" required placeholder="Votre Prénom">
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Adresse Email</label>
+                    <div class="validity">
+                        <input type="email" name="emailaddress" required placeholder="Votre Email">
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Code postal</label>
+                    <div class="validity">
+                        <input type="number" name="codepostal" min="1000" required placeholder="Votre Code Postal">
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="pays">Pays d'origine</label>
+                    <select name="pays" required>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="albanie">Albanie</option>
+                        <option value="andorre">Andorre</option>
+                        <option value="autriche">Autriche</option>
+                        <option value="bielorussie">Biélorussie</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="bosnieHerzegovine">Bosnie-Herzégovine</option>
+                        <option value="bulgarie">Bulgarie</option>
+                        <option value="croatie">Croatie</option>
+                        <option value="danemark">Danemark</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="estonie">Estonie</option>
+                        <option value="finlande">Finlande</option>
+                        <option value="france" selected>France</option>
+                        <option value="grece">Grèce</option>
+                        <option value="hongrie">Hongrie</option>
+                        <option value="irlande">Irlande</option>
+                        <option value="islande">Islande</option>
+                        <option value="italie">Italie</option>
+                        <option value="lettonie">Lettonie</option>
+                        <option value="liechtenstein">Liechtenstein</option>
+                        <option value="lituanie">Lituanie</option>
+                        <option value="luxembourg">Luxembourg</option>
+                        <option value="exRepubliqueYougoslaveDeMacedoine">Ex-République Yougoslave de Macédoine</option>
+                        <option value="malte">Malte</option>
+                        <option value="moldavie">Moldavie</option>
+                        <option value="monaco">Monaco</option>
+                        <option value="norvege">Norvège</option>
+                        <option value="paysBas">Pays-Bas</option>
+                        <option value="pologne">Pologne</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="roumanie">Roumanie</option>
+                        <option value="royaumeUni">Royaume-Uni</option>
+                        <option value="russie">Russie</option>
+                        <option value="saintMarin">Saint-Marin</option>
+                        <option value="serbieEtMontenegro">Serbie-et-Monténégro</option>
+                        <option value="slovaquie">Slovaquie</option>
+                        <option value="slovenie">Slovénie</option>
+                        <option value="suede">Suède</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="republiqueTcheque">République Tchèque</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="vatican">Vatican</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="parlerdenous">Comment avez-vous entendu parler de nous ?</label>
+                    <select name="parlerdenous" required>
+                        <option value="connaissance">Connaissance</option>
+                        <option value="internet">Internet</option>
+                        <option value="rs">Réseaux Sociaux </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="bday">Date à laquelle vous souhaitez être recontacté</label>
+                    <div>
+                        <input type="date" name="date" required>
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="texte">Informations complémentaires</label>
+                    <textarea name="texte" cols="30" rows="5" placeholder="Saisir un texte ici"></textarea>
+                </div>
+                <input type="submit" value="Envoyer" id="send">
+		    </form>
         </main>
+        <footer>
+            <div>
+                <h2>Les sites partenaires</h2>
+                <div>
+                    <div><div><a>Material.net</a></div><img src="https://www.materiel.net/assets/dist/images/content/favicon.ico" alt="Logo Materiel.net"></div>
+                    <div><div><a>Razer</a></div><img src="https://www.razer.com/_ui/responsive/theme-blue/razer/images/favicon.ico" alt="Logo Razer"></div>
+                    <div><div><a>Roccat</a></div><img src="https://media.roccat.org/Favicon_a1047eab1035d58682a53557e0b2a75edbfd15fd_img~favicon_16_4.png" alt="Logo Roccat"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Suivez nous</h2>
+                <div>
+                    <div><div><a>@Octet-Market</a></div><i class="fab fa-instagram"></i></div>
+                    <div><div><a>Like notre page</a></div><i class="fab fa-facebook"></i></div>
+                    <div><div><a>#OctetMarket</a></div><i class="fab fa-twitter"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Contactez nous</h2>
+                <div>
+                    <div><div><a>07 81 86 62 87</a></div><i class="fas fa-phone-square-alt"></i></div>
+                    <div><div><a>Par E-mail</a></div><i class="far fa-envelope"></i></div>
+                    <div><div><a>Sur Linkedin</a></div><i class="fab fa-linkedin"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Copyright 2019</h2>
+                <div>
+                    <div><p>2011 Av. J-C. / 2021 © Tous droits réservés</p></div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

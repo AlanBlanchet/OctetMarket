@@ -1,19 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <base href="../">
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Octet-Market</title>
-        <link rel="stylesheet" type="text/css" href="header-style.css">
-        <link rel="stylesheet" type="text/css" href="pages-style.css">
         <link rel="shortcut icon" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="page-structure.css">
+        <link rel="stylesheet" type="text/css" href="pages-style.css">
+        <link rel="stylesheet" type="text/css" href="./Nous%20Rejoindre/metier.css">
         <script src="https://kit.fontawesome.com/29189c846f.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="header.js"></script>
+        <script type="text/javascript" src="burger.js"></script>
     </head>
     <body>
-        <div id="header-html"></div>
+        <header id="header-html">
+            <div id="header-1">
+                <a href="index.html">Octet Market</a>
+            </div>
+            <div class="nav-menu">
+                <button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>
+                <nav>
+                    <div class="menu-bar">
+                        <div><a href="index.html">Accueil</a></div>
+                        <div>
+                            <a>Produits</a>
+                            <div class="sub-menu">
+                                <div><a href="Produits/peripheriques.html">Périphériques</a></div>
+                                <div><a href="Produits/hardware.html">Hardware</a></div>
+                                <div><a href="Produits/logiciels.html">Logiciels</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="Nous Rejoindre/nousrejoindre.html">Nous rejoindre</a>
+                            <div class="sub-menu">
+                                <div><a href="Nous Rejoindre/vendeur.html">Vendeur</a></div>
+                                <div><a href="Nous Rejoindre/formateur.html">Formateur</a></div>
+                                <div><a href="Nous Rejoindre/developpeurweb.html">Developpeur Web</a></div>
+                            </div>
+                        </div>
+                        <div><a href="contact.html">Contact</a></div>
+                        <span></span>
+                        <div><a href="faq.html">FAQ</a></div>
+                        <div><a href="equipe.html">Équipe</a></div>
+                        <div><a href="presse.html">Presse</a></div>
+                    </div>
+                    <div class="milieu">
+                        <a class="recherche">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <input type="search" name="q" class="s" placeholder="Rechercher">
+                        <a href="https://twitter.com/?lang=fr" target="_blank" class="but">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://fr-fr.facebook.com/" target="_blank" class="but">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
-            ENTREZ ELEMENTS POUR PAGE VENDEUR.HTML
+            <div class="poste">
+                <div class="entete">
+                    <i class="fas fa-cash-register"></i>
+                    <p>Vendeur h/f</p>
+                </div>
+                <div class="offre">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Bonjour, nous sommes donc une entreprise qui comme vous avez pu le remarqué se situe dans
+                        le domaine de l'informatique. Cependant, nous possédons plus de 15 infrastructures qui 
+                        nous permets de vendre les articles et notamment ce mis en avant par ce site vitrine. 
+                        Comme nous venons de le préciser nous vendons nos produits dans nos propres infrastructures
+                        et non sur notre site. Nous nécéssitons donc des vendeurs professionnels qui auront des 
+                        caractéristiques spéciales que nous citerons ci-dessous.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; Afin de nous rejoindre en tant que vendeur, vous devez posséder les qualités suivantes : 
+                        une bonne connaissance de nos produits, du marché en général, un passionné en informatique
+                        sera donc plus valorisé. Un bon commercial connaît parfaitement les caractéristiques et les
+                        bénéfices de ses produits ou services, le marché sur lequel il intervient, les forces et
+                        les faiblesses de ses concurrents ainsi que ses clients. L'organisation, la gestion de
+                        dizaines (voir de centaines) de clients différents et autant voir plus de noms 
+                        d'interlocuteurs et de contrats commerciaux différents nécéssite une bonne organisation.
+                        Nous mettons également un point d'honneur sur l'honnêteté, rien ne se construit dans une 
+                        relation client à long terme sans honnêteté et sur des malentendus. Le discours du commercial 
+                        doit donc être sincère pour être crédible. L'empathie, faculté de s'identifier à quelqu'un, 
+                        de ressentir ce qu'il ressent. Il faut également avoir la tête froide, ne pas facilement 
+                        céder à la pression, au stress, la relation client est souvent source de stress et de 
+                        pression : prospection, prise de rendez-vous, négociation commerciale difficile, risque 
+                        de perte d'un gros client, etc. Mieux vaut donc savoir prendre du recul et résister 
+                        au stress ! Tout est question de dose : Le stress est positif quand il est stimulant
+                        et permet d'avancer mais il peut devenir négatif quand il est trop envahissant.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Enfin nous viens l'optimisme, l'acceptation de l'échec, la remise en cause, 
+                        l'optimisme du commercial doit être de rigueur, même en cas d'échec. Il faut savoir
+                        se remettre en cause, analyser ses échecs pour mieux rebondir. La persévérance, 
+                        la patience, bon nombre d'accords commerciaux nécessitent plusieurs rendez-vous 
+                        et/ou échanges téléphoniques, la patience et la persévérance sont donc nécessaires. 
+                        Sans compter que votre premier rendez-vous peut très bien se situer à un moment où votre 
+                        prospect n'a pas de besoin... La signature d'un contrat commercial peut donc arriver des
+                        mois plus tard. L'aptitude relationnelles, la capacité d'adaptation et d'écoute, la relation
+                        client nécessite un sens relationnel développé (timide s'abstenir), une capacité
+                        d'écoute (écoute active) et d'adaptation afin d'intégrer rapidement les spécificités
+                        de chacun de ses clients.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Et finalement, le fait de savoir mobiliser les énergies en interne, certaines actions 
+                        (une promotion sur mesure dans un magasin par exemple) impliquent que le commercial devienne en quelque sorte un chef d'orchestre. Charge à lui de coordonner les différents services en charge de son action spécifique : promotion/marketing, logistique, prestaires externes, etc.</p>
+                </div>
+            </div>
+            <a id="postule" href="contact.html"> Contactez nous </a>
         </main>
+        <footer>
+            <div>
+                <h2>Les sites partenaires</h2>
+                <div>
+                    <div><div><a>Material.net</a></div><img src="https://www.materiel.net/assets/dist/images/content/favicon.ico" alt="Logo Materiel.net"></div>
+                    <div><div><a>Razer</a></div><img src="https://www.razer.com/_ui/responsive/theme-blue/razer/images/favicon.ico" alt="Logo Razer"></div>
+                    <div><div><a>Roccat</a></div><img src="https://media.roccat.org/Favicon_a1047eab1035d58682a53557e0b2a75edbfd15fd_img~favicon_16_4.png" alt="Logo Roccat"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Suivez nous</h2>
+                <div>
+                    <div><div><a>@Octet-Market</a></div><i class="fab fa-instagram"></i></div>
+                    <div><div><a>Like notre page</a></div><i class="fab fa-facebook"></i></div>
+                    <div><div><a>#OctetMarket</a></div><i class="fab fa-twitter"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Contactez nous</h2>
+                <div>
+                    <div><div><a>07 81 86 62 87</a></div><i class="fas fa-phone-square-alt"></i></div>
+                    <div><div><a>Par E-mail</a></div><i class="far fa-envelope"></i></div>
+                    <div><div><a>Sur Linkedin</a></div><i class="fab fa-linkedin"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Copyright 2019</h2>
+                <div>
+                    <div><p>2011 Av. J-C. / 2021 © Tous droits réservés</p></div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
