@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Octet-Market</title>
+        <link rel="shortcut icon" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="page-structure.css">
+        <link rel="stylesheet" type="text/css" href="pages-style.css">
+        <script src="https://kit.fontawesome.com/29189c846f.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="burger.js"></script>
+    </head>
+    <body>
+        <header id="header-html">
+            <div id="header-1">
+                <a href="index.html">Octet Market</a>
+            </div>
+            <div class="nav-menu">
+                <button class="burger" onclick="SetBurger()"><i class="fas fa-hamburger"></i></button>
+                <nav>
+                    <div class="menu-bar">
+                        <div><a href="index.html">Accueil</a></div>
+                        <div>
+                            <a>Produits</a>
+                            <div class="sub-menu">
+                                <div><a href="Produits/peripheriques.html">Périphériques</a></div>
+                                <div><a href="Produits/hardware.html">Hardware</a></div>
+                                <div><a href="Produits/logiciels.html">Logiciels</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="Nous Rejoindre/nousrejoindre.html">Nous rejoindre</a>
+                            <div class="sub-menu">
+                                <div><a href="Nous Rejoindre/vendeur.html">Vendeur</a></div>
+                                <div><a href="Nous Rejoindre/formateur.html">Formateur</a></div>
+                                <div><a href="Nous Rejoindre/developpeurweb.html">Developpeur Web</a></div>
+                            </div>
+                        </div>
+                        <div><a href="contact.html">Contact</a></div>
+                        <span></span>
+                        <div><a href="faq.html">FAQ</a></div>
+                        <div><a href="equipe.html">Équipe</a></div>
+                        <div><a href="presse.html">Presse</a></div>
+                    </div>
+                    <div class="milieu">
+                        <a class="recherche">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <input type="search" name="q" class="s" placeholder="Rechercher">
+                        <a href="https://twitter.com/?lang=fr" target="_blank" class="but">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://fr-fr.facebook.com/" target="_blank" class="but">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div>
+                <div class="main-slider">
+                    <div class="slides">
+                        <div class="slider">
+                            <div>
+                                <h1>Bienvenue chez Octet Market</h1>
+                                <p>Octet Market est une boutique en ligne pour acheter du Hardware (Produits Physiques Informatiques) tel que des claviers, souris, écrans... mais également du Software (Produits Virtuels Informatiques) tel que Potoshop, Deuxième Pro, Sonic Pro Vegas, Paint Pro..., 
+                                </p>
+                            </div>
+                            <img src="./Images/slider%201.png" alt="slider1">
+                        </div>
+                        <div class="slider">
+                            <img src="./Images/slider%202.png" alt="slider2">
+                        </div>
+                        <div class="slider">
+                            <img src="./Images/slider%203.png" alt="slider3">
+                        </div>
+                        <div class="slider">
+                            <img src="./Images/slider%204.png" alt="slider4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="residences">
+                <h1>Avec plus de 15 enseignes en France !</h1>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/D%C3%A9partements_de_France-simple.svg" alt="Image Carte de France">
+                    <svg>
+                        <g>
+                            <circle cx="55%" cy="25%" r="1%" fill="#FF0000" stroke="#FF3333" stroke-width="5"/>
+                            <svg x="55%" y="23%" id="paris">
+                                <rect x="10px" y="0px" width="0" height="25"/>
+                                <text x="15px" y="18px">PARIS</text>
+                            </svg>
+                        </g>
+                        <g>
+                            <circle cx="66%" cy="78%" r="1%" fill="#FF0000" stroke="#FF3333" stroke-width="5"/>
+                            <svg x="66%" y="76%" id="montpellier">
+                                <rect x="10px" y="0px" width="0" height="25"/>
+                                <text x="15px" y="18px">MONTPELLIER</text>
+                            </svg>                         
+                        </g>
+                        <g>
+                            <circle cx="51%" cy="3%" r="1%" fill="#FF0000" stroke="#FF3333" stroke-width="5"/>
+                            <svg x="51%" y="1%" id="calais">
+                                <rect x="10px" y="0px" width="0" height="25"/>
+                                <text x="15px" y="18px">CALAIS</text>
+                            </svg>                          
+                        </g>
+                        <g>
+                            <circle cx="58%" cy="53%" r="1%" fill="#FF0000" stroke="#FF3333" stroke-width="5"/>
+                            <svg x="58%" y="51%" id="riom">
+                                <rect x="10px" y="0px" width="0" height="25"/>
+                                <text x="15px" y="18px">RIOM</text>
+                            </svg>
+                        </g>
+                        <g>
+                            <circle cx="60%" cy="4.5%" r="1%" fill="#FF0000" stroke="#FF3333" stroke-width="5"/>
+                            <svg x="60%" y="2.5%" id="tourcoing">
+                                <rect x="10px" y="0px" width="0" height="25"/>
+                                <text x="15px" y="18px">TOURCOING</text>
+                            </svg>
+                        </g>
+                        <use xlink:href="#paris"/>
+                        <use xlink:href="#montpellier"/>
+                        <use xlink:href="#calais"/>
+                        <use xlink:href="#riom"/>
+                        <use xlink:href="#tourcoing"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="container pages-produits">
+                <a href="Produits/peripheriques.html" class="container-produit">
+                    <div>
+                        <img src="Images/Produits/Périphériques/keyboard1.png" alt="image périphériques">
+                    </div>
+                    <div>
+                        <span>Périphériques</span>
+                        <div></div>
+                    </div>
+                </a>
+                <a href="Produits/logiciels.html" class="container-produit">
+                    <div>
+                        <img src="Images/Produits/Logiciels/logiciel1.png" alt="image logiciels">
+                    </div>
+                    <div>
+                        <span>Logiciels</span>
+                        <div></div>
+                    </div>
+                </a>
+                <a href="Produits/hardware.html" class="container-produit">
+                    <div>
+                        <img src="Images/Produits/Hardware/hardware1.png" alt="image hardware">
+                    </div>
+                    <div>
+                        <span>Hardware</span>
+                        <div></div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <div class="container-espace-commentaire">
+                    <h1>
+                        Espace Commentaire
+                    </h1>
+                    <div class="container-commentaire">
+                        <h3>Chuck Norris</h3>
+                        <div>
+                            <p>Cette boutique est parfaite. J'ai pu achter un ordinateur GAMER pour mon fils de 12 ans. Il peut désormais jouer à Fortnite en Ultra. Merci Beaucoup Octet Market !!!</p>
+                            <div>
+                                <button>Utile</button>
+                                <button>Signaler</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                666 personnes trouvent ce commentaire utile
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-commentaire">
+                        <h3>Julien</h3>
+                        <div>
+                            <p>Pire site de rencontre au monde. Ce site est zoophobe, je n'arrive pas à entrer en contacte avec mes pandas.</p>
+                            <div>
+                                <button>Utile</button>
+                                <button>Signaler</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Po trouve ce commentaire utile.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-commentaire-plus">
+                        <a href="#" target="_blank">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <h2>Les sites partenaires</h2>
+                <div>
+                    <div><div><a>Material.net</a></div><img src="https://www.materiel.net/assets/dist/images/content/favicon.ico" alt="Logo Materiel.net"></div>
+                    <div><div><a>Razer</a></div><img src="https://www.razer.com/_ui/responsive/theme-blue/razer/images/favicon.ico" alt="Logo Razer"></div>
+                    <div><div><a>Roccat</a></div><img src="https://media.roccat.org/Favicon_a1047eab1035d58682a53557e0b2a75edbfd15fd_img~favicon_16_4.png" alt="Logo Roccat"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Suivez nous</h2>
+                <div>
+                    <div><div><a>@Octet-Market</a></div><i class="fab fa-instagram"></i></div>
+                    <div><div><a>Like notre page</a></div><i class="fab fa-facebook"></i></div>
+                    <div><div><a>#OctetMarket</a></div><i class="fab fa-twitter"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Contactez nous</h2>
+                <div>
+                    <div><div><a>07 81 86 62 87</a></div><i class="fas fa-phone-square-alt"></i></div>
+                    <div><div><a>Par E-mail</a></div><i class="far fa-envelope"></i></div>
+                    <div><div><a>Sur Linkedin</a></div><i class="fab fa-linkedin"></i></div>
+                </div>
+            </div>
+            <div>
+                <h2>Copyright 2019</h2>
+                <div>
+                    <div><p>2011 Av. J-C. / 2021 © Tous droits réservés</p></div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
