@@ -15,6 +15,7 @@ body{
 }
 main{
 	width:100%;
+	font-family: "Montserrat", sans-serif;
 }
 
 .equipe-structure{
@@ -78,6 +79,7 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: center;	
+	padding: 10px;
 }
 
 .equipe-structure:nth-child(2n+1) > .equipe-container > div > div:first-child > img{
@@ -190,6 +192,7 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 10px;
 }
 
 .equipe-structure:nth-child(2n) > .equipe-container > div > div:first-child > img{
