@@ -191,13 +191,13 @@ main{
 
 .cartep:hover > div>img{
 	transition: 0.5s ;
-	transform: scale(1.1);
+	transform: scale(1);
 
 }
 
 .cartep> div>img{
 	transition: 0.5s;
-	transform: scale(1);
+	transform: scale(0.9);
 }
 
 .cartep:hover>div:last-child>div{
