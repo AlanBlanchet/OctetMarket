@@ -183,6 +183,7 @@ main + div > div:first-child,main + div > div:last-child{
 	display: flex;
 	padding: 50px 0px;
 	background-color: var(--background-overlay);
+	font-family: "Montserrat", sans-serif;
 }
 
 .container-produit{
